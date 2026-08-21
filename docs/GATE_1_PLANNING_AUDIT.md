@@ -1,9 +1,10 @@
 # MiguelMiguel — Gate 1 Planning Audit
 
-**Status:** Gate 1 draft — approval required before script drafting
+**Status:** Gate 1.1 revision draft — approval required before script drafting
 **Current format:** normal folder containing planning documents only
 **Godot project created:** no
 **Application code written:** no
+**Revision status:** uncommitted and unpushed for review
 
 ## 1. What this gate does
 
@@ -21,13 +22,13 @@ It does **not** write the final script, create `project.godot`, create `res://`,
 
 ## 2. Source hierarchy
 
-The two supplied attachments were read in full. The project did not contain the named `MiguelMiguel_Full_Game_Plan_and_Build_Prompt.md`, so this audit uses the supplied documents as follows:
+The two supplied attachments were read in full. The project did not initially contain the named `MiguelMiguel_Full_Game_Plan_and_Build_Prompt.md`; the supplied master-prompt attachment is now preserved as that root-level file so future reviews have a stable canonical reference. The source hierarchy is:
 
 1. **Definitive planning direction attachment:** source of truth for the short psychological visual novel, canon, scope, tone, scenes, word budgets, profile axes, endings, visual/audio direction, and technical baseline.
 2. **Supplied master prompt attachment:** source of truth for the Gate 1 workflow, Godot architecture expectations, validator requirements, save requirements, testing expectations, and approval stops.
-3. **Existing repository docs:** historical web-game planning only. They are marked superseded and must not guide Godot implementation.
+3. **Existing repository docs:** historical web-game planning only. They are moved under `docs/archive/web-plan/` and must not guide Godot implementation.
 
-If the missing named file is later supplied, it should be compared against this set before any script or implementation work begins. Any difference that changes canon or scope requires approval.
+If a later canonical file is supplied, it should be compared against the root copy before any script or implementation work begins. Any difference that changes canon or scope requires approval.
 
 ## 3. Definitive production contract
 
@@ -43,7 +44,7 @@ If the missing named file is later supplied, it should be compared against this 
 | Story structure | Nine major scenes, branch-and-bottleneck flow, six interpretation choices, one final report, four endings |
 | Factual canon | Miguel A is biologically/chronologically original; Miguel B is the biological reconstruction |
 | Moral canon | No ending is labeled ethically correct; the game does not score which consciousness deserves the name |
-| Player role | Elias Venn, a Human Review Detective whose signature authorizes a consequence the Measure already computed |
+| Player role | Elias Venn, a Human Review Detective whose signature creates a presumptive legal identity and authorizes transfer around a consequence the Measure already computed |
 | Visual identity | Muted painterly institutional realism; no neon cyberpunk, gore, constant glitch, or identity-coded color |
 | First implementation slice | Title, story UI, deterministic dialogue runner, Scene 1 through its profile choice, profile overlay, placeholder art, basic settings, autosave/manual save |
 
@@ -59,7 +60,15 @@ The hidden axes are useful authoring tools, not player-facing alignment. Each ch
 
 ### Recommendation C — Treat the final report as an institutional action
 
-The four conclusions should be presented as reports with consequences, not as “good,” “bad,” or “secret” endings. The No Signature outcome must still show that refusing authorship does not stop the Measure’s emergency procedure.
+The four conclusions should be presented as reports with consequences, not as “good,” “bad,” or “secret” endings. The Continuation must temporarily change treatment through presumptive designation before delayed conflict review. The No Signature outcome must show that refusal removes clean human authorization but does not stop the documented emergency panel route.
+
+### Recommendation F — Keep uncertainty distinct from avoidance
+
+Ordinary “insufficient information,” “mixed motive,” and “no single criterion” choices receive an authored `epistemic_restraint` tag, not `avoidance`. Avoidance is inferred primarily from how Elias acts at the final report and how his final monologue frames that action.
+
+### Recommendation G — Make both Miguels pay a real moral cost
+
+A chooses possible systemic change over immediate worker lives. B uses an institution-controlled emergency channel to save the workers, knowing it may expose the Uncounted’s access route; authorities capture rebels and destroy most of the leak. Neither choice is presented as the clean answer.
 
 ### Recommendation D — Build a small content-driven runner
 
@@ -73,12 +82,12 @@ The vertical slice should use labels such as `PLACEHOLDER — REPLACE BEFORE CON
 
 | Decision | Recommended default | Why it is safe | Approval point |
 | --- | --- | --- | --- |
-| Missing named full-plan file | Treat the two supplied attachments as the current source; compare any later file before script work | Prevents inventing a third canon | Before Gate 2/script |
+| Canonical full-plan file | Preserve the supplied master prompt at the repository root; compare any later replacement before script work | Gives future reviewers one stable reference | Before Gate 2/script |
 | Viewpoint | Close third person through Elias | Preserves intimacy while allowing distance from his thoughts | Gate 2 |
 | Subject labels | Use Miguel A and Miguel B as institutional labels; never imply A/B moral status | The labels are already canon and help the UI stay neutral | Gate 2 |
 | Miguel portrait differentiation | Same base portrait with controlled wardrobe/lighting/context differences only | Avoids visual meta-clues about origin | Asset review |
 | Final report UI | Four plain report cards with full consequence text and no hierarchy beyond reading order | Prevents “secret ending” behavior | Gate 2 |
-| Profile axis ranges | Small bounded integers, initially `-3..3`, clamped after every choice | Enough room for authored variation without becoming a score | Technical review |
+| Profile axis ranges | Small bounded integers, initially `-3..3`, clamped after every choice; use `epistemic_restraint` tags for caution | Separates careful reasoning from avoidance | Technical review |
 | Profile entries | One visible entry after each interpretation choice; 4–6 final observations assembled from authored combinations | Meets the brief without exposing hidden variables | Script approval |
 | Save slots | Three manual slots plus one autosave | Simple for a new player and enough for branch comparison | Technical review |
 | Controller | Support standard focus/navigation where Godot provides it; do not block Windows release on advanced remapping | Keeps the first slice small | Vertical-slice review |
@@ -97,6 +106,11 @@ The vertical slice should use labels such as `PLACEHOLDER — REPLACE BEFORE CON
 - [x] Future Godot architecture, data schema, saves, validators, and tests documented in beginner-friendly language.
 - [x] Production milestones and risks documented.
 - [x] No Godot project or application code created.
+- [x] Legal presumption, delayed conflict review, and emergency panel override are explicit.
+- [x] A/B moral costs and pre-decision knowledge are explicit.
+- [x] One private, non-scored pre-proof biological deduction is explicit.
+- [x] Typography baseline is 26–30px dialogue, 20–24px speaker labels, 18px secondary UI minimum.
+- [x] Superseded web documents are separated under `docs/archive/web-plan/`.
 
 ## 7. Approval needed
 
@@ -104,9 +118,10 @@ Before moving to Gate 2/script drafting, approve or revise:
 
 1. The close-third-person viewpoint through Elias.
 2. The fixed A-original/B-reconstruction canon and late proof reveal.
-3. The six-choice profile matrix and its axis meanings.
-4. The four final reports and their stated consequences.
-5. The branch-and-bottleneck structure and word-budget tension described in `SCENE_BEAT_SHEET.md`.
-6. The normal-folder-first workflow and the recommendation to defer `project.godot` until the script/design gate is approved.
+3. The legal mechanics: presumptive designation, delayed conflict review, and emergency panel override.
+4. The six-choice profile matrix, `epistemic_restraint` tags, and final-report avoidance inference.
+5. The four final reports and their stated consequences.
+6. The branch-and-bottleneck structure and word-budget tension described in `SCENE_BEAT_SHEET.md`.
+7. The normal-folder-first workflow and the recommendation to defer `project.godot` until the script/design gate is approved.
 
 The next step after approval is `docs/SCRIPT.md` in scene order. No implementation should begin before that script is separately reviewed and approved.

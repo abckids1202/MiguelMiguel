@@ -27,7 +27,7 @@
 
 ### Milestone 3 — Core systems
 
-**Work:** all dialogue node types, dossier viewer, conditional lines, final report and routing, examiner profile assembly, dialogue history, auto, skip, accessibility controls, and story validator.
+**Work:** all dialogue node types, dossier viewer, conditional lines, final report and routing, examiner profile assembly, dialogue history, auto, skip, accessibility controls, story validator, and explicit legal-action states for presumptive designation, conflict review, and panel override.
 
 **Checks:** every node type renders; all four endings reachable; no branch strands the player; saved choices remain stable.
 
@@ -35,7 +35,7 @@
 
 **Work:** integrate Scenes 2–9, final approved script, final backgrounds/portraits/music/effects, dossier items, profile variants, and report consequences.
 
-**Checks:** all six choices appear exactly once; all four endings work; no factual contradiction; profile entries assemble as authored; visual treatment never reveals origin.
+**Checks:** all six choices appear exactly once; the single private pre-proof deduction appears once and is not scored; all four endings work; legal treatment matches the selected report; no factual contradiction; profile entries assemble as authored; visual treatment never reveals origin.
 
 ### Milestone 5 — Polish and accessibility
 
@@ -71,12 +71,15 @@ Risk terms: **severity** means how damaging the failure would be; **likelihood**
 | --- | --- | --- | --- | --- |
 | Script exceeds 10,000 words or feels lecture-like | High | Medium | Hold scenes near lower-middle budgets; read aloud; cut repeated philosophy | Narrative review |
 | Player cannot understand the factual answer | High | Medium | Seed concrete evidence, keep marker reveal legible, test with fresh players | Narrative + QA |
+| Legal designation feels either meaningless or magically powerful | High | Medium | Show presumptive identity, delayed conflict review, and emergency panel override as distinct authored states | Narrative + technical |
 | Player reads anger/calmness as origin proof | High | Medium | Explicit neutral entries, symmetric portraits, review all conditional lines | Narrative + visual |
-| B becomes obviously “the good one” | High | Medium | Preserve agency uncertainty; keep A understandable and B fallible | Narrative review |
+| B becomes obviously “the good one” | High | Medium | Show the traceable warning channel, captured rebels, destroyed leak, and uncertainty about agency | Narrative review |
 | A becomes a villain instead of morally compromised | High | Medium | Show his political grievance and personal wound beside the worker risk | Narrative review |
 | No Signature feels like a reward for doing nothing | High | Medium | Show emergency authorization and Elias’s continued consequence | Game direction |
 | Branches become a large route tree | Medium | Medium | Use branch-and-bottleneck structure and authored variants only | Engineering + narrative |
 | Six choices feel like a personality quiz | Medium | Medium | Use evidence-record language, no scores, no correct feedback, immediate profile notes | Narrative + UX |
+| Epistemic caution is misread as avoidance | High | Medium | Use `epistemic_restraint` tags; infer avoidance primarily from final-report action/monologue | Narrative + technical |
+| Provisional deduction becomes a hidden seventh profile choice | Medium | Medium | Store it privately with no axis/effect/ending access; use only for marker reflection | Narrative + QA |
 | Save/load loses a choice or strands the story | Critical | Medium | Versioned schema, scene-boundary round trips, corrupt-save recovery tests | Engineering + QA |
 | Story data contains missing node or asset references | High | Medium | Headless validator in development and CI before export | Engineering |
 | Placeholder art is mistaken for final | Medium | High early | Prefix/label placeholders and maintain manifest replacement status | Production |

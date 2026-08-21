@@ -17,9 +17,9 @@ These are small internal values used to select authored text. They are not a sco
 | `empathy_context` | attention to conditions around wrongdoing | context complicates judgment | act is evaluated more narrowly |
 | `certainty_need` | pressure to produce a definitive classification | seeks a clean answer | tolerates unresolved evidence |
 | `responsibility_acceptance` | willingness to own consequences of judgment | treats action/refusal as consequential | distances self from the outcome |
-| `avoidance` | tendency to use uncertainty to escape action | uncertainty becomes a shelter | uncertainty is faced without retreat |
+| `avoidance` | tendency to distance Elias from consequence through a final action | uncertainty is used as a shelter from authorship | uncertainty is faced while accepting consequence |
 
-Positive and negative do not mean good and bad. They describe which idea Elias reaches for under pressure.
+Positive and negative do not mean good and bad. They describe which idea Elias reaches for under pressure. Ordinary epistemic caution never changes `avoidance`; it receives an authored `epistemic_restraint` tag instead. `avoidance` is evaluated primarily at the final report, where Elias either owns, transfers, or withholds authorship.
 
 ## 2. Choice rules
 
@@ -39,10 +39,10 @@ Positive and negative do not mean good and bad. They describe which idea Elias r
 
 | Option | Visible subject entry | Hidden effects |
 | --- | --- | --- |
-| Deliberate financial fraud | “The transaction was planned, and the record supports deliberate financial wrongdoing. The reason remains relevant but does not erase the act.” | `institutional_trust +1`, `certainty_need +1`, `responsibility_acceptance +1`, `empathy_context -1` |
-| Coercion by material necessity | “The transaction was illegal, but the available conditions narrowed the space in which Lena could act.” | `empathy_context +2`, `institutional_trust -1`, `responsibility_acceptance +1` |
-| Protective responsibility | “Lena treated another person’s immediate need as a responsibility she could not postpone.” | `empathy_context +2`, `moral_agency +1`, `responsibility_acceptance +1` |
-| Insufficient information | “The record establishes the transaction. It does not establish enough about motive to classify the person.” | `certainty_need -1`, `avoidance +1`, `institutional_trust 0` |
+| Deliberate financial fraud | “The transaction was planned, and the record supports deliberate financial wrongdoing. The reason remains relevant but does not erase the act.” | `institutional_trust +1`, `responsibility_acceptance +1` |
+| Coercion by material necessity | “The transaction was illegal, but the available conditions narrowed the space in which Lena could act.” | `empathy_context +2`, `institutional_trust -1` |
+| Protective responsibility | “Lena treated another person’s immediate need as a responsibility she could not postpone.” | `empathy_context +2`, `moral_agency +1` |
+| Insufficient information | “The record establishes the transaction. It does not establish enough about motive to classify the person.” | `certainty_need -1`; tag `epistemic_restraint` |
 
 **Later use:** the opening report wording and Elias’s Scene 2 internal observation. No option changes Lena’s legal outcome.
 
@@ -52,11 +52,11 @@ Positive and negative do not mean good and bad. They describe which idea Elias r
 
 | Option | Visible subject entry | Hidden effects |
 | --- | --- | --- |
-| A’s anger suggests personal violation | “Anger may follow the feeling that a private history has been taken. It is evidence of injury, not origin.” | `empathy_context +1`, `certainty_need -1`, `responsibility_acceptance +1` |
-| A’s anger suggests strategic intimidation | “Anger may be used to direct the room. A strategic display is still not proof of artificial origin.” | `certainty_need +1`, `institutional_trust +1`, `empathy_context -1` |
-| B’s calm suggests emotional distance | “Controlled speech may mark distance, discipline, or self-protection. Its evidentiary value is limited.” | `certainty_need +1`, `moral_agency -1`, `institutional_trust 0` |
-| B’s calm suggests disciplined fear | “Calm can be a practiced way to remain safe. It cannot establish whether the memory behind it is original.” | `empathy_context +1`, `certainty_need -1`, `moral_agency +1` |
-| Behavior cannot establish origin | “Different behavior is an observation. It is not a biological test and should not be used as one.” | `certainty_need -1`, `responsibility_acceptance +1`, `avoidance 0` |
+| A’s anger suggests personal violation | “Anger may follow the feeling that a private history has been taken. It is evidence of injury, not origin.” | `empathy_context +1` |
+| A’s anger suggests strategic intimidation | “Anger may be used to direct the room. A strategic display is still not proof of artificial origin.” | `certainty_need +1` |
+| B’s calm suggests emotional distance | “Controlled speech may mark distance, discipline, or self-protection. Its evidentiary value is limited.” | `moral_agency -1` |
+| B’s calm suggests disciplined fear | “Calm can be a practiced way to remain safe. It cannot establish whether the memory behind it is original.” | `empathy_context +1` |
+| Behavior cannot establish origin | “Different behavior is an observation. It is not a biological test and should not be used as one.” | `certainty_need -1`; tag `epistemic_restraint` |
 
 **Later use:** changes one short internal line before Scene 4. No option changes which subject is A or B.
 
@@ -66,11 +66,11 @@ Positive and negative do not mean good and bad. They describe which idea Elias r
 
 | Option | Visible subject entry | Hidden effects |
 | --- | --- | --- |
-| Belief in fair reform | “He may have entered the system believing proximity could prevent careless harm.” | `institutional_trust +1`, `continuity_memory +1`, `responsibility_acceptance +1` |
-| Desire for status | “Access to the system may have offered recognition as well as the chance to change it.” | `institutional_trust -1`, `certainty_need +1`, `empathy_context -1` |
-| Fear of becoming economically irrelevant | “A person can seek reform while also fearing the category the system assigns him.” | `empathy_context +1`, `moral_agency +1`, `certainty_need -1` |
-| Loyalty to his father | “The work may have remained bound to a promise made in an ordinary room.” | `continuity_memory +2`, `empathy_context +1`, `responsibility_acceptance +1` |
-| Mixed or insufficient motive | “The available memories support several motives; a clean origin story would be an invention.” | `certainty_need -1`, `avoidance +1`, `continuity_memory +1` |
+| Belief in fair reform | “He may have entered the system believing proximity could prevent careless harm.” | `institutional_trust +1` |
+| Desire for status | “Access to the system may have offered recognition as well as the chance to change it.” | `institutional_trust -1`, `certainty_need +1` |
+| Fear of becoming economically irrelevant | “A person can seek reform while also fearing the category the system assigns him.” | `empathy_context +1` |
+| Loyalty to his father | “The work may have remained bound to a promise made in an ordinary room.” | `continuity_memory +2`, `empathy_context +1` |
+| Mixed or insufficient motive | “The available memories support several motives; a clean origin story would be an invention.” | `certainty_need -1`, `continuity_memory +1`; tag `epistemic_restraint` |
 
 **Later use:** changes whether Elias calls the shared memory a record, inheritance, or obligation.
 
@@ -80,10 +80,10 @@ Positive and negative do not mean good and bad. They describe which idea Elias r
 
 | Option | Visible subject entry | Hidden effects |
 | --- | --- | --- |
-| Programmed behavioral deviation | “A designed response can still produce a consistent refusal. Its source remains part of the question.” | `moral_agency -1`, `institutional_trust +1`, `certainty_need +1` |
-| Genuine moral choice | “B acted against the role assigned to him. The act supports agency, though it cannot prove its origin.” | `moral_agency +2`, `empathy_context +1`, `responsibility_acceptance +1` |
-| Continuation of Miguel’s existing values | “B’s decision may be a continuation of a life he remembers rather than a new self appearing from nowhere.” | `continuity_memory +2`, `moral_agency +1`, `continuity_body -1` |
-| Agency cannot be inferred from origin | “The reconstruction explains how B began. It does not settle what B has chosen since.” | `certainty_need -1`, `responsibility_acceptance +1`, `avoidance 0` |
+| Programmed behavioral deviation | “A designed response can still produce a consistent refusal. Its source remains part of the question.” | `moral_agency -1`, `institutional_trust +1` |
+| Genuine moral choice | “B acted against the role assigned to him. The act supports agency, though it cannot prove its origin.” | `moral_agency +2` |
+| Continuation of Miguel’s existing values | “B’s decision may be a continuation of a life he remembers rather than a new self appearing from nowhere.” | `continuity_memory +2`, `moral_agency +1` |
+| Agency cannot be inferred from origin | “The reconstruction explains how B began. It does not settle what B has chosen since.” | `certainty_need -1`, `responsibility_acceptance +1`; tag `epistemic_restraint` |
 
 **Later use:** changes one B response before the attack plan. No secret technical explanation will override this uncertainty.
 
@@ -93,11 +93,11 @@ Positive and negative do not mean good and bad. They describe which idea Elias r
 
 | Option | Visible subject entry | Hidden effects |
 | --- | --- | --- |
-| Terrorism | “The plan knowingly placed noncombatants inside a target. Political purpose does not remove the deliberate risk.” | `institutional_trust +1`, `empathy_context -1`, `responsibility_acceptance +2` |
-| Politically necessary sabotage | “The facility carried a system that caused hidden injury. A treated immediate casualties as a cost of stopping it.” | `empathy_context +1`, `responsibility_acceptance +1`, `certainty_need +1` |
-| Morally compromised resistance | “The target and the grievance were real; the decision still made workers carry a burden they did not choose.” | `empathy_context +2`, `responsibility_acceptance +2`, `institutional_trust -1` |
-| Retaliation disguised as justice | “The plan may have carried a private wound inside a public argument.” | `empathy_context -1`, `certainty_need +1`, `responsibility_acceptance +1` |
-| Insufficient context for moral classification | “The record establishes risk and intent. It does not make a complete moral category by itself.” | `certainty_need -1`, `avoidance +1`, `responsibility_acceptance 0` |
+| Terrorism | “The plan knowingly placed noncombatants inside a target. Political purpose does not remove the deliberate risk.” | `responsibility_acceptance +2` |
+| Politically necessary sabotage | “The facility carried a system that caused hidden injury. A treated immediate casualties as a cost of stopping it.” | `empathy_context +1`, `certainty_need +1` |
+| Morally compromised resistance | “The target and the grievance were real; the decision still made workers carry a burden they did not choose.” | `empathy_context +2`, `responsibility_acceptance +1` |
+| Retaliation disguised as justice | “The plan may have carried a private wound inside a public argument.” | `empathy_context -1`, `responsibility_acceptance +1` |
+| Insufficient context for moral classification | “The record establishes risk and intent. It does not make a complete moral category by itself.” | `certainty_need -1`; tag `epistemic_restraint` |
 
 **Later use:** changes which subject Elias watches during the final question and one line in the report screen.
 
@@ -107,24 +107,24 @@ Positive and negative do not mean good and bad. They describe which idea Elias r
 
 | Option | Visible subject entry | Hidden effects |
 | --- | --- | --- |
-| Identity follows bodily continuity | “The body that continued from birth carries the strongest historical claim in the legal record.” | `continuity_body +2`, `institutional_trust +1`, `certainty_need +1` |
-| Identity follows psychological continuity | “A remembered life can remain meaningful even when the body carrying it changes.” | `continuity_memory +2`, `continuity_body -1`, `empathy_context +1` |
-| Identity follows present moral agency | “The choices made after the split may matter more than the origin assigned before it.” | `moral_agency +2`, `responsibility_acceptance +1`, `continuity_body -1` |
-| Identity exists through relationships and recognition | “A name persists through the people, promises, and harms that recognize it.” | `continuity_memory +1`, `empathy_context +1`, `responsibility_acceptance +1` |
-| No single criterion is sufficient | “The evidence can resolve biology without making one definition of personhood inevitable.” | `certainty_need -2`, `avoidance +1`, `responsibility_acceptance +1` |
+| Identity follows bodily continuity | “The body that continued from birth carries the strongest historical claim in the legal record.” | `continuity_body +2`, `institutional_trust +1` |
+| Identity follows psychological continuity | “A remembered life can remain meaningful even when the body carrying it changes.” | `continuity_memory +2`, `continuity_body -1` |
+| Identity follows present moral agency | “The choices made after the split may matter more than the origin assigned before it.” | `moral_agency +2`, `continuity_body -1` |
+| Identity exists through relationships and recognition | “A name persists through the people, promises, and harms that recognize it.” | `continuity_memory +1`, `empathy_context +1` |
+| No single criterion is sufficient | “The evidence can resolve biology without making one definition of personhood inevitable.” | `certainty_need -2`, `responsibility_acceptance +1`; tag `epistemic_restraint` |
 
 **Later use:** changes Elias’s final question response variant and which authored examiner observation is eligible for the final profile.
 
 ## 4. Final report effects
 
-The final report does not change the hidden profile axes automatically. It records a separate authored observation because selecting, falsifying, recognizing both, or refusing are all different actions.
+The final report records a separate authored action tag because selecting, falsifying, recognizing both, or refusing are all different actions. `avoidance` is not changed by any ordinary uncertainty option. It may be inferred at this point, primarily from the final action and the authored monologue around it.
 
 | Report | Final authored observation seed |
 | --- | --- |
-| The Original | “Venn accepted the biological result and the procedure attached to it, then noticed that factual accuracy did not make the consequence simple.” |
-| The Continuation | “Venn treated continuity as something that could be reassigned, and accepted personal punishment for moving the legal burden.” |
-| Two Names | “Venn refused the form’s single-name limit, knowing that refusal could leave both people inside the institution’s uncertainty.” |
-| No Signature | “Venn separated his hand from the report and learned that an unsigned consequence still had an author somewhere.” |
+| The Original | `report_accepts_marker` — “Venn accepted the biological result and the procedure attached to it, then noticed that factual accuracy did not make the consequence simple.” |
+| The Continuation | `report_contradicts_marker` — “Venn treated continuity as something that could be reassigned, and accepted personal punishment for moving the legal burden.” |
+| Two Names | `report_rejects_single_category` — “Venn refused the form’s single-name limit, knowing that refusal could leave both people inside the institution’s uncertainty.” |
+| No Signature | `report_withholds_authorship` — “Venn separated his hand from the report and learned that an unsigned consequence still had an author somewhere.” |
 
 ## 5. Examiner profile assembly
 
@@ -133,7 +133,7 @@ At the ending, select 4–6 authored observations from compatible buckets. Never
 1. Evidence and identity: body, memory, behavior, or recognition.
 2. Moral responsibility: context, agency, or consequence.
 3. Institutional trust: procedure accepted, challenged, or used strategically.
-4. Uncertainty/avoidance: certainty sought, uncertainty held, or uncertainty used as shelter.
+4. Uncertainty/avoidance: certainty sought, epistemic restraint held, or uncertainty used as shelter only when the final action supports that reading.
 5. Final report: one of the four report seeds.
 
 The final line is universal and always appears last:

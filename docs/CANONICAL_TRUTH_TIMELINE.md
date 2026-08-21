@@ -20,18 +20,23 @@
 | 11 | Before attack | A distrusts B but uses his access | A; B; Hale through surveillance | Scenes 3–6 |
 | 12 | Attack planning | A plans to detonate part of the Measure’s records facility while transmitting hidden allocation records | A; B discovers; Hale tracks; Elias learns in Scene 6 | Scene 6 dossier |
 | 13 | Attack night | A learns night workers remain inside and refuses to cancel | A; B; Hale; records | Scene 6 |
-| 14 | Attack night | B warns the workers and disrupts the detonation | B; workers; A; Hale | Scene 6 |
-| 15 | After disruption | The data leak succeeds only partially | A; B; Hale; later Elias | Scene 6 dossier |
+| 14 | Attack night | B uses an institution-controlled emergency channel to warn the workers and disrupt the detonation, knowing the channel may expose the Uncounted’s access route | B; the institution’s monitors; workers; A learns afterward | Scene 6 |
+| 15 | After disruption | The workers survive, but authorities capture rebels and destroy most of the leaked evidence; B has chosen immediate lives over the movement’s chance at uncertain future systemic change | A; B; Hale; later Elias | Scene 6 dossier |
 | 16 | Six months after divergence | Authorities capture both Miguels | A; B; Hale; Elias learns from case file | Scene 2 |
 | 17 | Before interview | The Measure identifies B as synthetic through a microscopic reconstruction marker with very high confidence | Measure; Hale; lab; not Elias initially | Scene 7 |
-| 18 | Before interview | Law requires a human reviewer to designate the original before prosecution and reclamation | Hale; legal system; Elias learns from Hale | Scenes 2 and 7 |
-| 19 | Present | Elias is assigned; the institution already knows the factual answer | Hale; Measure; Elias gradually realizes | Scenes 7–9 |
+| 18 | Before interview | The marker is scientifically conclusive but not legally self-executing; law requires a human reviewer to create the presumptive legal identity used for immediate prosecution/reclamation transfer | Hale; legal system; Elias learns in stages | Scenes 2 and 7 |
+| 19 | Before interview | The institution has a documented emergency review/panel override for a missing or unavailable designation; it can proceed without Elias, but loses the clean human authorization and must preserve an auditable reason | Hale; legal system; panel; Elias does not yet know the full procedure | Scene 7 and ending consequences |
+| 20 | Present | Elias is assigned; the institution already knows the factual answer and wants his signed designation as legal cover and accountable human endorsement | Hale; Measure; Elias gradually realizes | Scenes 7–9 |
+| 21 | Present outcome | A signed designation contradicting the marker is provisionally honored as a presumptive identity and opens delayed conflict review; refusal triggers the emergency review/panel route | Hale; panel; affected subjects | Endings |
 
-## 2. Fixed factual answer
+## 2. Fixed factual answer and legal mechanics
 
 - **Miguel A:** biological and chronological original.
 - **Miguel B:** biological reconstruction.
 - **Proof:** the reconstruction marker in the laboratory report.
+- **Legal effect of a signature:** Elias’s signed designation creates a presumptive legal identity for the immediate proceeding and authorizes the connected transfer. It is not a scientific override; it is the human legal act attached to the scientific result.
+- **Contradictory signature:** a designation for B creates temporary human-prosecution protections for B and holds A’s transfer while a delayed conflict review investigates the mismatch. Hale investigates Elias because the signed report conflicts with conclusive evidence.
+- **Refusal:** the institution records the refusal and convenes the documented emergency review or panel override. The panel can apply the known result, but cannot claim the clean human authorization Elias withheld.
 - **What remains unresolved:** whether B’s compassion is freely chosen, whether A’s continuity settles personhood, and whether Elias can avoid responsibility by refusing to sign.
 
 The proof must not be overturned by a secret file, a random assignment, a last-minute reversal, or an emotional tell.
@@ -53,7 +58,8 @@ The player’s usable understanding should develop in layers:
 ## 4. Non-negotiable continuity checks
 
 - B must not know events after the reconstruction snapshot unless he learned them through later participation, surveillance, or inference.
-- A must know the night workers were present before choosing not to cancel.
+- A must know the night workers were present, understand that refusing to cancel may kill them, and still choose possible systemic change over those immediate lives.
+- B must know the workers are present, know the emergency channel is institution-controlled and traceable, and still choose to warn them despite the likely capture of rebels and destruction of most of the leak.
 - B must have both the copied memory of Miguel’s earlier life and the independent memory of awakening.
 - The Measure’s prior knowledge must be revealed late enough that the player first experiences the case as an investigation.
 - The proof resolves biology, not moral personhood.

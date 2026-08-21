@@ -136,17 +136,27 @@ The supplied direction gives scene envelopes that total close to the upper scrip
 **Beats:**
 
 1. Elias reviews the attack plan and the night-worker roster.
-2. Evidence establishes that A knew workers remained inside.
-3. A argues that workers maintained a system whose slow administrative deaths remain invisible.
+2. Evidence establishes that A knew workers remained inside and understood that refusing to cancel could kill them.
+3. A argues that workers maintained a system whose slow administrative deaths remain invisible; he chooses possible systemic change over immediate lives.
 4. B agrees about the system but rejects making replaceable workers carry the guilt of its owners.
-5. B warned the workers and prevented the detonation; the leak failed partially.
-6. A calls B’s mercy a form of institutional conditioning.
-7. B admits he cannot prove otherwise.
+5. B knows the institution-controlled emergency channel is monitored and may expose the Uncounted’s access route.
+6. B uses the channel anyway, warning the workers and preventing the detonation. The workers survive, but authorities capture rebels and destroy most of the leaked evidence.
+7. A calls B’s rescue a form of institutional conditioning; B admits he cannot prove that his compassion was free.
 8. The player classifies A’s act.
 9. No option shames the player; the scene leaves silence after the selection.
 
 **Choice options:** terrorism; politically necessary sabotage; morally compromised resistance; retaliation disguised as justice; insufficient context for moral classification.
-**Exit:** Hale authorizes the laboratory report.
+**Exit:** Hale authorizes the laboratory report, and Elias is left with a provisional private assessment before he reads it.
+
+### Provisional deduction — Private Assessment
+
+This is a deduction, not a seventh profiling choice. It does not change history, profile axes, ending access, or final score.
+
+**Prompt:** “Before reviewing the laboratory result, which subject do you currently believe is biologically original?”
+
+**Options:** Miguel A; Miguel B; Available evidence is insufficient.
+
+Record the answer privately. After the marker appears in Scene 7, Elias briefly reflects on whether his inference matched the report and what kind of evidence he was relying on. The reflection must not praise a correct guess or shame an incorrect one.
 
 ### Scene 7 — Proof
 
@@ -159,10 +169,12 @@ The supplied direction gives scene envelopes that total close to the upper scrip
 1. The report identifies B as synthetic through a microscopic reconstruction marker.
 2. Elias knows A is biologically continuous with the man born as Miguel.
 3. Hale admits the Measure already knew before the interview.
-4. Law requires a human reviewer because a machine cannot legally designate a citizen for prosecution or a construct for reclamation.
-5. Hale says: “The system can establish continuity. It cannot assume responsibility for what continuity means.”
-6. A or B delivers the central accusation: “It does not need you to know who I am. It needs you to agree with what it will do.”
-7. Elias sees that the interview was not a search for truth but a request for authorization.
+4. The marker is scientifically conclusive but not legally self-executing. Elias’s signed designation creates a presumptive legal identity for the immediate proceeding and authorizes transfer.
+5. A designation contradicting the marker is provisionally honored, then triggers delayed conflict review. B would temporarily receive the human-prosecution protections of the signed designation while A’s transfer is held; Hale investigates Elias because the report conflicts with conclusive evidence.
+6. Refusal triggers a documented emergency review or panel override. The institution can still proceed, but it loses the clean human authorization it wanted; Elias remains useful as an auditable human refusal and accountable witness to the gap.
+7. Hale says: “The system can establish continuity. It cannot assume responsibility for what continuity means.”
+8. A or B delivers the central accusation: “It does not need you to know who I am. It needs you to agree with what it will do.”
+9. Elias sees that the interview was not a search for truth but a request for authorization.
 
 **Exit:** Elias is offered one final question.
 
@@ -193,7 +205,7 @@ The supplied direction gives scene envelopes that total close to the upper scrip
 
 **Beats:**
 
-1. The report shows the known biological result and the available legal actions.
+1. The report shows the known biological result and the available legal actions, including the presumptive effect of a signed designation, delayed conflict review for contradiction, and emergency review after refusal.
 2. The player selects one of four complete reports.
 3. Each report states its consequence plainly before confirmation.
 4. Reuse the pen/signature sound from Scene 1; for No Signature, let the missing sound create pressure.
@@ -204,6 +216,13 @@ The supplied direction gives scene envelopes that total close to the upper scrip
 
 **Report options:** The Original; The Continuation; Two Names; No Signature.
 **Exit:** ending profile, credits, return-to-title option.
+
+### Ending consequence beats
+
+- **The Original:** Elias signs A’s designation. A is prosecuted and B is transferred toward reclamation under the presumptive identity. No conflict review is opened because the report agrees with the marker. Elias keeps his job and the housing/treatment priority attached to civic employment.
+- **The Continuation:** Elias signs for B despite the marker. B temporarily receives human-prosecution protections and A’s transfer is held while delayed conflict review begins. Hale investigates Elias; the review can overturn the presumption. B is not instantly safe, and Elias has moved another man’s historical guilt onto him.
+- **Two Names:** Elias files a noncompliant report. It is rejected; no third legal identity is created. Elias is removed, documented review begins, and both subjects’ immediate treatment remains uncertain while the institution lacks a clean designation.
+- **No Signature:** Elias refuses. The institution records the refusal and uses the emergency panel override to apply the Measure’s result. A is prosecuted and B is reclaimed; Elias loses clean authorship, but the outcome still proceeds and his refusal remains in his employment record.
 
 ## 3. Branch map
 

@@ -108,7 +108,8 @@ Story data should be stored in validated JSON or Godot Resources. JSON is the re
   "conditions": [],
   "effects": {
     "profile_axes": {"empathy_context": 1},
-    "profile_entry": "obs_subject_01"
+    "profile_entry": "obs_subject_01",
+    "choice_tag": "epistemic_restraint"
   },
   "next": "s01_lena_continue",
   "branches": [
@@ -180,6 +181,8 @@ Effects may:
 - select a later authored text variant;
 - change a background/portrait/audio cue;
 - mark a dossier item visible or read.
+- record a private, non-scored deduction such as the pre-proof biological assessment;
+- add an authored choice/action tag such as `epistemic_restraint`, `report_accepts_marker`, or `report_withholds_authorship`.
 
 Effects may not:
 
@@ -189,7 +192,21 @@ Effects may not:
 - create a new unvalidated story node;
 - expose hidden axis values to the UI.
 
-## 7. Save design
+The six `profile_choice` nodes are the only interpretation choices. The Scene 6 pre-proof biological assessment is a separate private deduction node: it records `subject_a`, `subject_b`, or `insufficient`, changes no axis, does not change ending access, and is used only for a post-marker reflection.
+
+## 7. Legal-action state
+
+The future story state must distinguish scientific evidence from legal action:
+
+- `marker_result`: fixed internal fact that B is the reconstruction;
+- `designation`: `subject_a`, `subject_b`, `both_noncompliant`, or `refused`;
+- `designation_status`: `pending`, `presumptive`, `conflict_review`, `panel_override`, or `finalized`;
+- `transfer_authorization`: whether the signed designation or panel has authorized the connected transfer;
+- `review_reason`: authored safe label for contradiction or refusal.
+
+A signed designation matching the marker becomes presumptive and can finalize through the ordinary route. A signed designation for B becomes presumptive for the immediate proceeding but must enter delayed `conflict_review`; it cannot silently rewrite the marker. A refusal enters documented `panel_override`; the panel may apply the marker result, but the saved state retains that Elias withheld clean human authorization.
+
+## 8. Save design
 
 Use versioned local files through Godot’s supported `user://` APIs. Save data should include:
 
@@ -214,7 +231,7 @@ Settings save separately and include text speed, auto delay, skip-read preferenc
 - Do not store absolute paths, secrets, telemetry, or online credentials.
 - Add migrations only when a future schema actually changes; document each migration.
 
-## 8. UI and input architecture
+## 9. UI and input architecture
 
 Use scalable `Control` nodes anchored to a 1920×1080 reference layout. In plain terms, `Control` nodes are Godot UI elements that can resize with the window.
 
@@ -246,13 +263,13 @@ Input requirements:
 
 Do not rely on color alone for subject, choice state, selected state, or validation state.
 
-## 9. Audio architecture
+## 10. Audio architecture
 
 Create buses named `Music`, `Ambience`, and `Effects`, plus a master bus. AudioManager controls their volumes and crossfades. It should restore the active track after load without replaying a signature sound incorrectly.
 
 The pen/signature sound is a reusable effects cue: it plays in Scene 1 and the signed final reports; No Signature deliberately omits it.
 
-## 10. Validator and tests
+## 11. Validator and tests
 
 ### Headless validator
 
@@ -268,6 +285,11 @@ The validator must report:
 - report routes that are not reachable;
 - missing visible profile entries;
 - missing final profile question.
+- more or fewer than six `profile_choice` nodes;
+- missing the single private pre-proof biological assessment;
+- a contradictory designation that skips `conflict_review`;
+- a refusal route that skips `panel_override`;
+- ending text that omits the legal consequence of the selected report.
 
 ### Automated tests
 
@@ -284,7 +306,7 @@ The validator must report:
 
 Test 16:9 desktop resolutions, keyboard navigation, controller where supported, text scale, reduced motion, audio buses, history, auto, skip, save interruption/corruption, placeholder replacement, and a clean-machine Windows export.
 
-## 11. Technical constraints
+## 12. Technical constraints
 
 - No third-party plugin in the initial vertical slice unless its value clearly outweighs maintenance risk.
 - Keep scripts focused by responsibility.

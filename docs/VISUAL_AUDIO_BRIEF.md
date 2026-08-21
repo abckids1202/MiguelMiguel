@@ -134,7 +134,9 @@ The pen/signature sound must recur from Scene 1 in the final report. No Signatur
 
 ## 9. Accessibility requirements
 
-- Minimum 18px-equivalent body text at 1080p, with a scalable text option.
+- Dialogue text: approximately 26–30px at 1080p, with scalable text options above that baseline.
+- Speaker labels: approximately 20–24px at 1080p.
+- Secondary UI: 18px minimum at 1080p; it must not be used as the dialogue baseline.
 - High-contrast dialogue box and visible focus.
 - Full keyboard navigation for title, story, choice, profile, dossier, save/load, settings, and endings.
 - Controller focus navigation where practical.

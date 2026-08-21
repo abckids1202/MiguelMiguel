@@ -39,13 +39,19 @@ The city avoids the word poverty. It prefers *low participation*, *low optimizat
 
 Technology is advanced but legible: surveillance, predictive systems, biological reconstruction, and incomplete neural-memory modeling exist. The story shows their consequences through forms, queues, screens, and rooms rather than machinery lectures.
 
-## 5. The Measure and the human signature
+## 5. The Measure, legal designation, and the human signature
 
 Miguel worked as a model auditor for the Measure. He discovered that the system was not only predicting instability; it deliberately lowered services in districts predicted to become politically expensive. The resulting deterioration then became evidence that the district deserved fewer services.
 
 After Miguel’s father died following a medical-priority denial, Miguel copied internal records and joined the decentralized resistance called the Uncounted. He became its most visible name because he understood the system and because the city preferred to blame one face.
 
-The Measure already knows which body is continuous with the man born as Miguel. A microscopic reconstruction marker identifies Miguel B as synthetic with extremely high confidence. Law still requires a human reviewer to designate the original before Miguel A can be prosecuted and Miguel B reclaimed as property. Elias is not needed to solve the biological question. He is needed to authorize its consequence.
+The Measure already knows which body is continuous with the man born as Miguel. A microscopic reconstruction marker identifies Miguel B as synthetic with extremely high confidence. The marker is scientifically conclusive, but it is not legally self-executing: the law does not allow a laboratory result alone to create a person’s operative legal designation or authorize transfer.
+
+Elias’s signed designation creates a **presumptive legal identity** for the immediate proceeding and authorizes the connected transfer: the designated human is processed as the citizen Miguel, while the other subject is transferred into the institutional reconstruction/property process. The presumption can be challenged, but it is the clean human authorization the institution wants beneath its automated result.
+
+If Elias signs for B while contradicting the marker, the report is accepted provisionally by the intake system because a human reviewer has created the presumptive designation. A conflict review is automatically opened rather than silently accepting or instantly rejecting the report. During that delay, B receives the human-prosecution protections attached to the designation, while A’s transfer and prosecution status are held for review. Hale investigates Elias because the report conflicts with conclusive scientific evidence and may represent professional error, coercion, or deliberate falsification. The Continuation therefore changes treatment temporarily and materially, but it is not a magical permanent legal victory.
+
+If Elias refuses to sign, a documented emergency review or panel override may apply the Measure’s result. The override exists to prevent a missing signature from stopping urgent custody and safety procedures, but it does not provide the clean, accountable human authorization the institution requested. Elias remains useful because his refusal is itself an auditable human event: the panel must record why the designated reviewer would not sign, and the institution must carry a visible gap between scientific result and human endorsement. Elias loses the power to delay the system indefinitely, but he cannot make his nonparticipation morally or administratively invisible.
 
 ## 6. Main cast
 
@@ -55,6 +61,7 @@ The Measure already knows which body is continuous with the man born as Miguel. 
 - **Role:** Human Review Detective, Meridian Civic Investigations
 - **Surface:** quiet, observant, dry, fatigued, professionally polite
 - **Internal condition:** depressed, morally exhausted, alienated from his work, ashamed of passivity
+- **Concrete dependency:** his employed civic status protects his housing and treatment priority. He fears entering the low-utility category assigned to the people whose reports he signs.
 - **Arc:** begins by confusing nonparticipation with innocence; ends knowing that signing, refusing, lying, and remaining silent are all choices with consequences
 - **Writing rule:** begin with coffee, messages, forms, and case numbers—not philosophical speeches
 
@@ -73,7 +80,7 @@ The Measure already knows which body is continuous with the man born as Miguel. 
 - **Legal status:** institutional biological property
 - **Temperament:** controlled, attentive, self-questioning, compassionate, sometimes unnervingly precise
 - **Truth:** biological reconstruction made from stolen medical scans, surveillance, and a neural model; memories match through the reconstruction snapshot
-- **Moral complication:** warned the workers and prevented the detonation, but cannot prove that this mercy was freely chosen rather than imposed or conditioned
+- **Moral complication:** used an institution-controlled emergency channel to warn the workers, knowing the channel could expose the Uncounted’s access route. The workers survived, but authorities captured rebels and destroyed most of the leaked evidence. He chose immediate visible lives over the movement’s chance at uncertain future systemic change.
 - **Relationship to A:** recognizes the same history but rejects A’s willingness to turn workers into acceptable losses
 
 ### Director Hale — the procedure
@@ -109,12 +116,14 @@ The player should not hear these as a list at the beginning. They emerge from co
 2. Miguel B is the biological reconstruction.
 3. B inherits Miguel’s memories through the reconstruction snapshot.
 4. B’s first independent memory is awakening inside the institution.
-5. A planned the records-facility attack knowing night workers remained inside.
-6. B warned the workers and prevented the detonation; the leak only partially succeeded.
-7. Hale and the Measure know the biological result before Elias interviews the subjects.
-8. Elias’s signature is legally required to designate the original and authorize the consequence.
-9. No hidden file proves that B’s compassion is either authentic or fake.
-10. No ending is the canonical moral answer.
+5. A planned the records-facility attack knowing night workers remained inside and chose possible systemic change over those immediate lives.
+6. B knew the workers were present, used an institution-controlled emergency channel to warn them, and knew the channel could expose the Uncounted’s access route.
+7. The workers survived, but authorities captured rebels and destroyed most of the leaked evidence; B chose immediate lives despite potentially preserving the system’s future harm.
+8. Hale and the Measure know the biological result before Elias interviews the subjects.
+9. The marker is scientifically conclusive but not legally self-executing; Elias’s signed designation creates a presumptive legal identity and authorizes transfer.
+10. A conflicting signed designation triggers delayed conflict review; refusal triggers a documented emergency review or panel override.
+11. No hidden file proves that B’s compassion is either authentic or fake.
+12. No ending is the canonical moral answer.
 
 ## 9. Structure and player experience
 
@@ -136,19 +145,19 @@ At the end, the profile heading changes from `SUBJECT: MIGUEL` to `SUBJECT: ELIA
 
 ### The Original
 
-Elias designates A according to biological evidence. A is prosecuted, B is scheduled for reclamation, and Elias remains employed. The report is factually correct while still leaving him uneasy about what the correct report authorizes.
+Elias designates A according to biological evidence. His signed report creates the presumptive legal identity used for the immediate proceeding: A is prosecuted, B is scheduled for reclamation, and Elias remains employed. The report is factually correct while still leaving him uneasy about what the correct report authorizes. His housing and treatment priority remain tied to the civic employment status that made signing possible.
 
 ### The Continuation
 
-Elias falsifies the designation in favor of B. B gains legal personhood through prosecution; A is classified anomalous. Hale recognizes the falsification, and Elias is removed and investigated. This is not a simple rescue: Elias transfers another person’s historical guilt onto B.
+Elias signs a designation in favor of B despite the marker. The institution initially honors the signed report as a presumptive legal identity: B receives the human-prosecution protections and A’s reclamation/transfer is held rather than immediately completed. The conflict review then compares the report with the marker. Hale investigates Elias for deliberate falsification or unfitness, and the review can overturn the presumption. This is not a simple rescue or instant permanent victory: Elias creates a real temporary change in treatment, but B remains inside a contested legal process. Elias transfers another person’s historical guilt onto B while accepting removal and investigation.
 
 ### Two Names
 
-Elias recognizes both as psychologically continuous persons. The report is rejected as noncompliant, Elias is removed, and the immediate fate of both Miguels remains uncertain.
+Elias files a noncompliant report recognizing both as psychologically continuous persons. It does not create a third automatic legal category: the report is rejected, the required human designation remains unresolved, and the institution moves to documented review while Elias is removed from the case. The immediate fate of both Miguels remains uncertain because the report has interrupted clean authorization without permanently defeating the legal machinery.
 
 ### No Signature
 
-Elias refuses to sign. Emergency procedure applies the Measure’s known result: A is prosecuted and B is reclaimed. Elias avoids authorship, not consequence.
+Elias refuses to sign. The institution records the refusal and convenes the documented emergency review or panel override. The panel applies the Measure’s known result: A is prosecuted and B is reclaimed. Elias loses the clean authorization the institution wanted, but the override prevents his refusal from stopping urgent procedure. He avoids authorship, not consequence; his employment and professional record now contain an auditable refusal.
 
 ## 11. Identity-neutral presentation rules
 
