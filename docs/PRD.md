@@ -1,5 +1,7 @@
 # MiguelMiguel — Product Requirements Document
 
+> **Superseded:** This document describes the earlier multi-case web-game product. Do not use it as implementation authority for the Godot visual novel. See `GAME_BIBLE.md` and `GATE_1_PLANNING_AUDIT.md`.
+
 **Status:** Gates 1–3 planning draft
 **Audience:** product, narrative, design, engineering, QA, security, and case authors
 **Release target:** polished portfolio MVP, five handcrafted cases

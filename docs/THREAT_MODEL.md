@@ -1,5 +1,7 @@
 # MiguelMiguel — Threat Model
 
+> **Superseded:** This document describes the earlier web-game threat model. The Godot build is offline-first with no backend; see `TECHNICAL_DESIGN.md` for the current trust and save-boundary decisions.
+
 **Status:** Gates 1–3 planning draft; implementation audit happens after the feature slice
 **Assets:** account ownership, guest runs, private case solutions, run integrity, player notes, reset/session secrets, progress and scores
 

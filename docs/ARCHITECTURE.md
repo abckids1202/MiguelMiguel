@@ -1,5 +1,7 @@
 # MiguelMiguel — Architecture and Data/API Contracts
 
+> **Superseded:** This document describes the earlier web-game plan. Do not use it as implementation authority for the Godot visual novel. See `GAME_BIBLE.md`, `TECHNICAL_DESIGN.md`, and `GATE_1_PLANNING_AUDIT.md`.
+
 **Status:** Gates 1–3 planning draft
 **Core stack:** React + TypeScript, FastAPI + Python, PostgreSQL, Redis
 **Runtime shape:** static frontend, API service, PostgreSQL, Redis

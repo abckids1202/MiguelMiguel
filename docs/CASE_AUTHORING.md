@@ -1,5 +1,7 @@
 # MiguelMiguel — Case Authoring Contract
 
+> **Superseded:** This document describes the earlier multi-case web-game plan. Do not use it as implementation authority for the Godot visual novel. See `NARRATIVE_DESIGN.md` and `SCENE_BEAT_SHEET.md`.
+
 **Status:** Gates 1–3 planning draft
 **Audience:** narrative designers, case reviewers, engine engineers, QA
 **Publication rule:** no case is published until schema, reachability, solvability, fairness, and hidden-data checks pass

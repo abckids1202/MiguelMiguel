@@ -1,5 +1,7 @@
 # MiguelMiguel — Test Strategy
 
+> **Superseded:** This document describes the earlier web-game test plan. Do not use it as implementation authority for the Godot visual novel. See `TECHNICAL_DESIGN.md` and `PRODUCTION_MILESTONES.md`.
+
 **Status:** Gates 1–3 planning draft
 **Quality target:** deterministic, accessible, concurrency-safe, and explainable portfolio MVP
 

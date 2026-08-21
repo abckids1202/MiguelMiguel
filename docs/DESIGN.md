@@ -1,5 +1,7 @@
 # MiguelMiguel — UI/UX and Visual Design Brief
 
+> **Superseded:** This document describes the earlier web-game interface. Do not use it as implementation authority for the Godot visual novel. See `VISUAL_AUDIO_BRIEF.md`.
+
 **Status:** Gates 1–3 planning draft
 **Design intent:** restrained archival laboratory; deliberate, readable, psychologically tense
 **Primary viewport:** desktop investigation at 1200px and above

@@ -1,5 +1,7 @@
 # MiguelMiguel — Milestone Plan
 
+> **Superseded:** This document describes the earlier web-game implementation plan. Do not use it as implementation authority for the Godot visual novel. See `PRODUCTION_MILESTONES.md`.
+
 **Status:** Gates 1–3 planning draft
 **Delivery style:** vertical, reviewable slices; each phase ends with checks, changed-file summary, behavior summary, and remaining risk
 
