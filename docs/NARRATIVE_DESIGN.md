@@ -1,8 +1,8 @@
 # MiguelMiguel — Narrative Design
 
-**Status:** Gate 1 planning authority
+**Status:** Gate 1 planning authority; approved Gate 2 script handoff
 **Viewpoint default:** close third person through Elias Venn
-**Script status:** not written yet; `SCRIPT.md` begins only after approval
+**Script status:** end-to-end draft exists in `docs/SCRIPT.md`; editorial and implementation review remain open
 
 ## 1. Narrative shape
 
@@ -141,9 +141,9 @@ After Scene 6 and before the laboratory report, add one private, non-scored dedu
 
 Options are Miguel A, Miguel B, and Available evidence is insufficient. The answer is recorded privately and used for a short reflection after the marker reveal. It does not change profile axes, ending access, or final score. A correct guess is not praised; an incorrect guess is not shamed.
 
-## 10. Editing pass before script approval
+## 10. Editing pass before script lock
 
-Once `SCRIPT.md` exists, review every scene aloud and mark:
+The current `SCRIPT.md` is a complete flow draft, not a locked final script. Review every scene aloud and mark:
 
 - redundant philosophical claims;
 - worldbuilding characters already know;
@@ -154,7 +154,7 @@ Once `SCRIPT.md` exists, review every scene aloud and mark:
 - speeches longer than the emotional situation can carry;
 - exposition that should be replaced by a form, screen, queue, or object.
 
-Cut or rewrite marked lines before script approval. The final script should feel more concrete after editing, not less intelligent.
+Cut or rewrite marked lines before script lock. The final script should feel more concrete after editing, not less intelligent.
 
 ## 11. Dossier and profile language
 
@@ -171,7 +171,7 @@ Avoid terms like *good ending*, *bad ending*, *true Miguel*, *fake Miguel*, *mor
 
 ## 12. Script handoff contract
 
-The later `SCRIPT.md` must contain, in scene order:
+The current and final `SCRIPT.md` must contain, in scene order:
 
 - stable node IDs;
 - speaker and prose;
@@ -185,4 +185,4 @@ The later `SCRIPT.md` must contain, in scene order:
 - ending variants;
 - localization keys or a keying plan.
 
-No final script should be written until this Gate 1 package is approved.
+The current draft satisfies the handoff contract at the planning level. It still needs aloud review, line polish, and later implementation validation before content lock.

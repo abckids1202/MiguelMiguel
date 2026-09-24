@@ -1,10 +1,10 @@
 # MiguelMiguel — Gate 1 Planning Audit
 
-**Status:** Gate 1.1 revision draft — approval required before script drafting
+**Status:** Gate 1.1 approved; Gate 2 end-to-end script draft in progress
 **Current format:** normal folder containing planning documents only
 **Godot project created:** no
 **Application code written:** no
-**Revision status:** uncommitted and unpushed for review
+**Revision status:** Gate 1.1 and the current script draft are committed and pushed; editorial review remains open
 
 ## 1. What this gate does
 
@@ -18,7 +18,7 @@ Gate 1 turns the definitive direction into a usable production contract. It answ
 - What technical shape should the future Godot project have?
 - What risks must be resolved before script and code work?
 
-It does **not** write the final script, create `project.godot`, create `res://`, add assets, or implement a dialogue runner.
+The Gate 1 package did **not** create `project.godot`, `res://`, assets, or application code. Gate 2 now adds the narrative draft in `docs/SCRIPT.md`; implementation remains deferred.
 
 ## 2. Source hierarchy
 

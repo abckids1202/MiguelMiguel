@@ -42,6 +42,45 @@ profile_observations[]
 
 The profile axes and exact authored effects remain defined in `CHOICE_PROFILE_MATRIX.md`. Ordinary uncertainty uses the authored `epistemic_restraint` tag and does not automatically increase avoidance. Avoidance is inferred primarily from Elias’s final action and report monologue.
 
+## 3. Choice ledger for implementation
+
+The visible options are authored in the scenes below. This ledger keeps their hidden effects next to the script so a future dialogue runner does not need to infer them from prose. Values are applied once when an option is selected and remain hidden from the player.
+
+| Choice | Visible option | Hidden effect(s) | Tag or note |
+| --- | --- | --- | --- |
+| C1 | Deliberate fraud | `institutional_trust +1`, `responsibility_acceptance +1` | — |
+| C1 | Coercion by necessity | `empathy_context +2`, `institutional_trust -1` | — |
+| C1 | Protective responsibility | `empathy_context +2`, `moral_agency +1` | — |
+| C1 | Insufficient information | `certainty_need -1` | `epistemic_restraint`; no avoidance effect |
+| C2 | A’s anger is a personal violation | `empathy_context +1` | — |
+| C2 | A’s anger is strategic intimidation | `certainty_need +1` | — |
+| C2 | B’s calm is emotional distance | `moral_agency -1` | — |
+| C2 | B’s calm is disciplined fear | `empathy_context +1` | — |
+| C2 | Behavior cannot establish origin | `certainty_need -1` | `epistemic_restraint`; no avoidance effect |
+| C3 | Belief in fair reform | `institutional_trust +1` | — |
+| C3 | Desire for status | `institutional_trust -1`, `certainty_need +1` | — |
+| C3 | Fear of irrelevance | `empathy_context +1` | — |
+| C3 | Loyalty to his father | `continuity_memory +2`, `empathy_context +1` | — |
+| C3 | Mixed motives / insufficient evidence | `certainty_need -1`, `continuity_memory +1` | `epistemic_restraint`; no avoidance effect |
+| C4 | Programmed deviation | `moral_agency -1`, `institutional_trust +1` | — |
+| C4 | Genuine moral choice | `moral_agency +2` | — |
+| C4 | Continuation of existing values | `continuity_memory +2`, `moral_agency +1` | — |
+| C4 | Agency cannot be inferred | `certainty_need -1`, `responsibility_acceptance +1` | `epistemic_restraint`; no avoidance effect |
+| C5 | Terrorism | `responsibility_acceptance +2` | — |
+| C5 | Politically necessary sabotage | `empathy_context +1`, `certainty_need +1` | — |
+| C5 | Morally compromised resistance | `empathy_context +2`, `responsibility_acceptance +1` | — |
+| C5 | Retaliation disguised as justice | `empathy_context -1`, `responsibility_acceptance +1` | — |
+| C5 | Insufficient context | `certainty_need -1` | `epistemic_restraint`; no avoidance effect |
+| C6 | Bodily continuity | `continuity_body +2`, `institutional_trust +1` | — |
+| C6 | Psychological continuity | `continuity_memory +2`, `continuity_body -1` | — |
+| C6 | Present moral agency | `moral_agency +2`, `continuity_body -1` | — |
+| C6 | Relationships and recognition | `continuity_memory +1`, `empathy_context +1` | — |
+| C6 | No single criterion | `certainty_need -2`, `responsibility_acceptance +1` | `epistemic_restraint`; no avoidance effect |
+
+The five Scene 8 “one final question” options are a narrative prompt, not a seventh profile choice. They only select a short dialogue variant before C6.
+
+Final report action tags are fixed as follows: The Original = `report_accepts_marker`; The Continuation = `report_contradicts_marker`; Two Names = `report_rejects_single_category`; No Signature = `report_withholds_authorship`. These tags drive authored profile observations and legal ending text, not a morality score.
+
 ---
 
 # SCENE 1 — A MINOR IRREGULARITY
