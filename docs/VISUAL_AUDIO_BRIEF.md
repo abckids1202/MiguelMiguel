@@ -2,7 +2,9 @@
 
 **Status:** Gate 1 planning authority
 **Reference frame:** 1920×1080, 16:9
-**Primary style:** painterly, muted, institutional visual novel
+**Primary style:** graphic illustrated realism with muted, institutional visual-novel composition
+
+Implementation note: the first Godot slice uses layered 2D presentation and an original generated civic-office background. Detailed production rules live in `VISUAL_STYLE_GUIDE.md`; the approved asset record lives in `ASSET_CATALOG.md`.
 
 ## 1. Visual direction
 

@@ -37,13 +37,13 @@ The supplied direction gives scene envelopes that total close to the upper scrip
 2. The Measure has reconstructed Lena’s identity-allowance transaction; the facts are uncontested.
 3. Lena admits selling access to part of her allowance to buy medicine for someone dependent on her.
 4. Elias notices the procedural language has no field for need, care, or coercion.
-5. Lena refuses to plead for sympathy. Use the candidate line only if the surrounding prose remains plain: “It was illegal before I did it. It only became immoral after I was caught.”
+5. Lena refuses to plead for sympathy. Keep her language plain: she asks Elias to attach her recorded statement to the appeal rather than asking him to forgive her.
 6. The player classifies her motive through the official interpretation overlay.
 7. The Measure’s report remains unchanged; Elias signs it.
 8. A pen/signature sound establishes the audio motif reused in Scene 9.
 
 **Choice options:** deliberate financial fraud; coercion by material necessity; protective responsibility; insufficient information.
-**Exit:** Hale’s dossier arrives; Elias is ordered to the detention facility.
+**Exit:** Mara Hale’s dossier arrives; Elias is ordered to the detention facility.
 
 ### Scene 2 — Meridian, 18:40
 
@@ -53,7 +53,7 @@ The supplied direction gives scene envelopes that total close to the upper scrip
 
 **Beats:**
 
-1. Elias boards an on-time train with untouched food and an unopened personal message.
+1. Elias boards an on-time train and opens a follow-up message from Lena asking him to attach her recorded statement to her appeal before her medicine exception expires.
 2. A reskilling advertisement promotes a profession already automated.
 3. An unemployment queue stands under a luxury storefront advertising “made by human hands.”
 4. A public screen reports improved allocation efficiency.
@@ -61,9 +61,9 @@ The supplied direction gives scene envelopes that total close to the upper scrip
 6. Hale sends the dossier: two prisoners, one legal citizen, one institutional construct, one hour for designation.
 7. Elias reads the word *duplicate* and does not yet ask what the report will authorize.
 
-**Exit:** train doors open at the detention facility; the building is quiet rather than theatrical.
+**Exit:** Elias attaches Lena’s statement to the appeal, then the train doors open at the detention facility; the building is quiet rather than theatrical.
 
-### Scene 3 — Miguel / Miguel
+### Scene 3 — MiguelMiguel
 
 **Purpose:** introduce the pair and establish that affect is not identity evidence.
 **Location:** split interrogation room.
@@ -82,7 +82,7 @@ The supplied direction gives scene envelopes that total close to the upper scrip
 8. The player classifies the observable behavior without converting it into an origin claim.
 
 **Choice options:** A’s anger suggests personal violation; A’s anger suggests strategic intimidation; B’s calm suggests emotional distance; B’s calm suggests disciplined fear; behavior cannot establish origin.
-**Exit:** Hale interrupts through the room system and orders Elias to proceed to shared childhood evidence.
+**Exit:** Mara Hale interrupts through the room system and orders Elias to proceed to shared childhood evidence.
 
 ### Scene 4 — A Shared Childhood
 
@@ -124,7 +124,7 @@ The supplied direction gives scene envelopes that total close to the upper scrip
 8. The scene refuses a secret code, medical scan, or later reveal that would settle the question.
 
 **Choice options:** programmed behavioral deviation; genuine moral choice; continuation of Miguel’s existing values; agency cannot be inferred from origin.
-**Exit:** Hale supplies the records-facility plan.
+**Exit:** Mara Hale supplies the records-facility plan.
 
 ### Scene 6 — Necessary Casualties
 
@@ -139,8 +139,8 @@ The supplied direction gives scene envelopes that total close to the upper scrip
 2. Evidence establishes that A knew workers remained inside and understood that refusing to cancel could kill them.
 3. A argues that workers maintained a system whose slow administrative deaths remain invisible; he chooses possible systemic change over immediate lives.
 4. B agrees about the system but rejects making replaceable workers carry the guilt of its owners.
-5. B knows the institution-controlled emergency channel is monitored and may expose the Uncounted’s access route.
-6. B uses the channel anyway, warning the workers and preventing the detonation. The workers survive, but authorities capture rebels and destroy most of the leaked evidence.
+5. B discovers the plan before the detonation and knows the institution-controlled emergency channel is monitored and may expose the Uncounted’s access route.
+6. B uses the channel anyway. The workers escape, but the warning disrupts timing rather than stopping the attack: the archive is partially destroyed, the Measure continues, authorities capture rebels, and most of the copied evidence is destroyed.
 7. A calls B’s rescue a form of institutional conditioning; B admits he cannot prove that his compassion was free.
 8. The player classifies A’s act.
 9. No option shames the player; the scene leaves silence after the selection.

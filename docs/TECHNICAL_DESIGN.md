@@ -1,11 +1,15 @@
 # MiguelMiguel — Technical Design
 
 **Status:** Gate 1 planning authority
-**Implementation status:** not started; no Godot project exists yet
+**Implementation status:** first visual vertical slice implemented; full production not started
 **Engine target:** Godot 4.7.1 stable or latest compatible 4.7 patch
 **Language:** typed GDScript where practical
 
 ## 1. Beginner-friendly technical summary
+
+### First visual implementation
+
+The current Godot slice keeps the story runner in `scripts/main.gd` but adds a reusable layered visual foundation: a location background layer, tint layer, portrait/UI layers, and restrained motion hooks. The first approved background is `assets/backgrounds/bg_civic_office.png`. Future backgrounds and transparent portraits can be added without changing story node IDs.
 
 Godot is the game engine that will display the story, accept input, play audio, and save progress. A Godot **project** is normally identified by a `project.godot` file, but this task intentionally stops before creating that file. We are first keeping the game in a normal folder so the story/design decisions can be reviewed without mixing them with engine files.
 

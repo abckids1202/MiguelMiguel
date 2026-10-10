@@ -7,7 +7,7 @@
 
 ## 1. One-sentence premise
 
-In a functioning near-future city where an automated allocation system decides who is useful, a depressed detective must distinguish an imprisoned rebel from his biological reconstruction—and discover that identifying the original body does not settle which consciousness should be allowed to live as Miguel.
+In a functioning near-future city where an automated allocation system decides who is useful, Detective Elias Venn of Meridian’s Civic Investigations Division must distinguish an imprisoned rebel from his biological reconstruction—and discover that identifying the original body does not settle which consciousness should be allowed to live as Miguel Aranda.
 
 ## 2. Player promise
 
@@ -43,7 +43,7 @@ Technology is advanced but legible: surveillance, predictive systems, biological
 
 Miguel worked as a model auditor for the Measure. He discovered that the system was not only predicting instability; it deliberately lowered services in districts predicted to become politically expensive. The resulting deterioration then became evidence that the district deserved fewer services.
 
-After Miguel’s father died following a medical-priority denial, Miguel copied internal records and joined the decentralized resistance called the Uncounted. He became its most visible name because he understood the system and because the city preferred to blame one face.
+After Rafael Aranda died following a medical-priority denial, Miguel copied internal records and joined the decentralized resistance called the Uncounted. He became its most visible name because he understood the system and because the city preferred to blame one face.
 
 The Measure already knows which body is continuous with the man born as Miguel. A microscopic reconstruction marker identifies Miguel B as synthetic with extremely high confidence. The marker is scientifically conclusive, but it is not legally self-executing: the law does not allow a laboratory result alone to create a person’s operative legal designation or authorize transfer.
 
@@ -83,13 +83,13 @@ If Elias refuses to sign, a documented emergency review or panel override may ap
 - **Moral complication:** used an institution-controlled emergency channel to warn the workers, knowing the channel could expose the Uncounted’s access route. The workers survived, but authorities captured rebels and destroyed most of the leaked evidence. He chose immediate visible lives over the movement’s chance at uncertain future systemic change.
 - **Relationship to A:** recognizes the same history but rejects A’s willingness to turn workers into acceptable losses
 
-### Director Hale — the procedure
+### Mara Hale — the procedure
 
 - **Age:** 52
-- **Role:** Director of Human Review
+- **Role:** Senior Investigator and supervisor, Civic Investigations Division
 - **Temperament:** calm, competent, respectful, procedurally precise
 - **Belief:** systems prevent arbitrary human prejudice; imperfect allocation is preferable to collapse
-- **Function:** represents moral distance; never says “kill him,” only “complete the designation”
+- **Function:** represents procedural distance; never says “kill him,” only “complete the designation”
 
 ### Lena — the opening mirror
 
@@ -116,9 +116,9 @@ The player should not hear these as a list at the beginning. They emerge from co
 2. Miguel B is the biological reconstruction.
 3. B inherits Miguel’s memories through the reconstruction snapshot.
 4. B’s first independent memory is awakening inside the institution.
-5. A planned the records-facility attack knowing night workers remained inside and chose possible systemic change over those immediate lives.
-6. B knew the workers were present, used an institution-controlled emergency channel to warn them, and knew the channel could expose the Uncounted’s access route.
-7. The workers survived, but authorities captured rebels and destroyed most of the leaked evidence; B chose immediate lives despite potentially preserving the system’s future harm.
+5. A planned to partially destroy the records archive knowing night workers remained inside and chose possible systemic change over those immediate lives.
+6. B discovered the plan, knew the workers were present, used an institution-controlled emergency channel to warn them, and knew the channel could expose the Uncounted’s access route.
+7. The workers escaped, but the warning disrupted rather than stopped the attack: the archive was partially destroyed, the Measure continued, authorities captured rebels, and most of the leaked evidence was destroyed. B chose immediate lives despite potentially preserving the system’s future harm.
 8. Hale and the Measure know the biological result before Elias interviews the subjects.
 9. The marker is scientifically conclusive but not legally self-executing; Elias’s signed designation creates a presumptive legal identity and authorizes transfer.
 10. A conflicting signed designation triggers delayed conflict review; refusal triggers a documented emergency review or panel override.

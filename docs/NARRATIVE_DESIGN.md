@@ -42,7 +42,7 @@ Describe the untouched coffee, the delayed message, the train handrail, the ligh
 | Elias | economical, dry, observant | personal answers, emotional naming | notices procedure and small physical neglect |
 | Miguel A | compressed, interrupting, concrete | pity, institutional euphemism | uses actual harm as evidence and accepts harsh tradeoffs |
 | Miguel B | qualified, careful, precise | claiming certainty about his own agency | turns definitions back toward the speaker |
-| Hale | calm, procedural, complete sentences | moral vocabulary when legal vocabulary will do | makes responsibility sound like a workflow |
+| Mara Hale | calm, procedural, complete sentences | moral vocabulary when legal vocabulary will do | makes responsibility sound like a workflow |
 | Lena | plain, direct, unsentimental | performing helplessness | separates what she did from what the system made necessary |
 
 ## 3. Information design
@@ -54,7 +54,7 @@ The player should learn in this order:
 3. Lena’s factual violation is not the whole moral story.
 4. Two Miguels share a memory record but differ in present interpretation and action.
 5. B has a first memory that A cannot share.
-6. The attack creates a concrete moral divergence: A chooses possible systemic change over immediate workers; B saves the workers through a traceable institution-controlled channel, allowing authorities to capture rebels and destroy most of the leak.
+6. The attack creates a concrete moral divergence: A plans partial destruction despite the workers; B discovers the plan and saves the workers through a traceable institution-controlled channel, but the warning only disrupts the attack, allowing partial archive destruction, rebel capture, and destruction of most of the leak.
 7. The Measure already knows the biological answer.
 8. The marker is scientifically conclusive but not legally self-executing; Elias’s signature creates a presumptive legal identity and authorizes transfer.
 9. A contradictory designation triggers delayed conflict review; refusal triggers a documented emergency panel override. Elias’s signature is valuable as legal and moral cover, not because the institution has no fallback.

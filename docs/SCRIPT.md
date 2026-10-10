@@ -1,9 +1,9 @@
-# MIGUEL / MIGUEL
+# MiguelMiguel
 
 ## End-to-End Script Draft
 
 **Status:** Gate 2 narrative/script draft — complete flow pass, provisional voice and line pass  
-**Authority:** This draft follows the approved Gate 1.1 planning documents. If a line conflicts with those documents, the planning documents win until this script is formally revised.  
+**Authority:** This draft follows the approved Gate 1.1 planning documents and the current narrative revision direction. If a line conflicts with those documents, the planning documents win until this script is formally revised.
 **Target runtime:** 45–60 minutes  
 **Working word budget:** 8,000–10,000 words; this draft is approximately 8,500 words including branch variants and remains open for read-aloud expansion  
 **Format:** psychological/philosophical visual novel  
@@ -16,7 +16,7 @@
 ## 1. Script conventions
 
 - **NARRATION** is Elias’s close-third-person interior narration.
-- **ELIAS**, **HALE**, **MIGUEL A**, **MIGUEL B**, **LENA**, and **SYSTEM** are spoken lines.
+- **ELIAS VENN**, **MARA HALE**, **MIGUEL ARANDA**, **MIGUEL A**, **MIGUEL B**, **LENA ORR**, **RAFAEL ARANDA**, and **SYSTEM** are spoken lines. `Miguel A` is an institutional case label; the full name is Miguel Aranda. Miguel B is also Miguel Aranda, the reconstructed continuation.
 - `[BG: ...]`, `[AUDIO: ...]`, and `[PORTRAIT: ...]` are presentation notes.
 - `[CHOICE: C#]` is one of the six scored profiling choices.
 - `[PRIVATE DEDUCTION: P1]` is recorded privately and is not scored, does not change historical truth, and does not unlock or block an ending.
@@ -86,7 +86,7 @@ Final report action tags are fixed as follows: The Original = `report_accepts_ma
 # SCENE 1 — A MINOR IRREGULARITY
 
 **Node range:** `S1_001–S1_014`  
-**Location:** Human Review Office, Meridian Civic Allocation Bureau  
+**Location:** Civic Investigations Division, Meridian Civic Allocation Bureau
 **Time:** 18:12  
 **Target:** 800–1,000 words / 6–8 minutes  
 **Profile choice:** C1 — Lena’s motive  
@@ -94,16 +94,16 @@ Final report action tags are fixed as follows: The Original = `report_accepts_ma
 
 ### S1_001 — Office after hours
 
-[BG: Human Review Office after hours. Rows of dark review stations. Meridian’s light is blue through rain-streaked glass.]  
+[BG: Civic Investigations Division after hours. Rows of dark review stations. Meridian’s light is blue through rain-streaked glass.]
 [AUDIO: ventilation, distant lift mechanism, one fluorescent tube beginning to fail]
 
 **NARRATION:**
 
-At 18:12, the office stopped pretending to be a workplace and became what it was: a machine waiting for someone to admit he was still inside it.
+At 18:12, the Civic Investigations Division stopped pretending to be a workplace and became what it was: a public service waiting for someone to admit he was still inside it.
 
-Elias Venn kept his station awake. The other screens had gone black in sequence. His remained lit because the bureau had not yet decided whether the case in front of him was a theft, a fraud, or a request for mercy written in a language mercy was not allowed to speak.
+Detective Elias Venn kept his station awake. The other screens had gone black in sequence. His remained lit because the bureau had not yet decided whether the case in front of him was a theft, a fraud, or a request for mercy written in a language mercy was not allowed to speak.
 
-On the screen: **LENA ORR — CIVIC STATUS REVIEW**.
+On the screen: **LENA ORR — CIVIC INVESTIGATION / CIVIC STATUS REVIEW**.
 
 Below her name, the Measure had already assembled its conclusion:
 
@@ -112,7 +112,7 @@ Below her name, the Measure had already assembled its conclusion:
 > Economic authorization: absent.  
 > Recommended action: suspend housing priority pending review.
 
-**ELIAS (thought):**
+**ELIAS VENN (thought):**
 
 The city did not ask whether Lena had stolen the money. It asked which category of person could be trusted after doing so.
 
@@ -124,7 +124,7 @@ The act was illegal. The reason was visible. The system had no field for “visi
 
 **SYSTEM:**
 
-Reviewer Venn. Please classify the subject’s primary motive.
+Detective Venn. Please classify the subject’s primary motive.
 
 **ELIAS (thought):**
 
@@ -136,23 +136,23 @@ His hand did not shake. That was not the same thing as courage. It was practice.
 
 [PORTRAIT: Lena, recorded interview; tired, direct, not sentimental]
 
-**LENA:**
+**LENA ORR:**
 
 I knew the transfer would be caught. I did not know it would be caught before the next dose.
 
-**ELIAS:**
+**ELIAS VENN:**
 
 You used another person’s authorization.
 
-**LENA:**
+**LENA ORR:**
 
 My brother used to have one. The bureau took it when he missed the reskilling threshold.
 
-**ELIAS:**
+**ELIAS VENN:**
 
 That does not answer the question.
 
-**LENA:**
+**LENA ORR:**
 
 It answers the question the medicine was answering.
 
@@ -201,13 +201,13 @@ He could not convert a missing field into a moral fact. The screen disliked unce
 
 ### S1_006 — Signature and exit
 
-**ELIAS (thought):**
+**ELIAS VENN (thought):**
 
-It was illegal before I did it. It only became immoral after I was caught.
+He had seen the same pattern in other files: a person broke a rule to meet a need, and the record kept the rule while losing the need.
 
 He deletes the sentence from his private notes. Then he types it again.
 
-**ELIAS:**
+**ELIAS VENN:**
 
 Suspension pending appeal. Emergency medication access remains active for seventy-two hours.
 
@@ -218,16 +218,16 @@ He signs.
 The screen closes Lena Orr’s file and opens a black dossier.
 
 > **HUMAN REVIEW HOLD**  
-> **MIGUEL / MIGUEL**  
+> **MIGUELMIGUEL**
 > Two detained persons. One biological citizen. One reconstructed person.  
 > Preliminary identity conflict.  
 > Intake deadline: 19:00.
 
-**HALE (message):**
+**MARA HALE (message):**
 
-Bring your questions. We already have the answer.
+Bring your questions. The two men are waiting.
 
-**ELIAS (thought):**
+**ELIAS VENN (thought):**
 
 That was the first lie. Or the first warning.
 
@@ -264,11 +264,15 @@ On the train wall, a civic screen displayed:
 
 Zero point zero three percent was how the city described the people who had not yet been made acceptable.
 
-### S2_002 — Unopened message
+### S2_002 — Lena’s follow-up
 
-Elias’s personal screen showed one unopened message from an unknown sender. He did not open it.
+Elias’s personal screen showed one unopened message from Lena Orr. He opened it before the train left the station.
 
-The bureau had taught him that unknown messages were either traps or requests. In Meridian, those were often the same thing.
+**LENA ORR (message):**
+
+Detective Venn — my appeal says the medicine review is still open. The pharmacy says the exception expires tomorrow. If you can attach the recorded statement to the appeal, please do it. If you cannot, tell me plainly.
+
+Elias stared at the last sentence. It was not a threat or a confession. It was a person asking the investigator not to disappear behind the system.
 
 An employment advertisement replaced it.
 
@@ -276,9 +280,9 @@ An employment advertisement replaced it.
 
 Your future is not predetermined. It is continuously optimized.
 
-**ELIAS (thought):**
+**ELIAS VENN (thought):**
 
-His housing contract renewed every ninety days on the condition that his civic usefulness remained above the continuity threshold. His treatment priority depended on the same status. He had once called this employment. Lately he called it a delay.
+His housing contract renewed every ninety days on the condition that his civic usefulness remained above the continuity threshold. His treatment priority depended on the same status. He had once called this employment. Lately he called it a delay. He attached Lena’s recording before the train entered the Bureau’s secure field.
 
 ### S2_003 — Hale’s dossier
 
@@ -291,15 +295,15 @@ The dossier opens automatically when the train enters the Bureau’s secure fiel
 > **ASSIGNED REVIEWER:** Elias Venn.  
 > **SENIOR INVESTIGATOR:** Mara Hale.
 
-**HALE (recorded briefing):**
+**MARA HALE (recorded briefing):**
 
 You will not determine which one is original from appearance, confidence, or memory. Those are testimony. You will determine what the evidence permits the institution to do.
 
-**ELIAS:**
+**ELIAS VENN:**
 
 And if the evidence permits two different things?
 
-**HALE (recorded briefing):**
+**MARA HALE (recorded briefing):**
 
 Then your signature tells us which one you believe we are permitted to do.
 
@@ -307,7 +311,7 @@ Then your signature tells us which one you believe we are permitted to do.
 
 The train passes beneath a tower wrapped in a public message: **NO ONE IS LOST. EVERYONE IS LOCATED.**
 
-**ELIAS (thought):**
+**ELIAS VENN (thought):**
 
 He had spent ten years signing his name beneath decisions made by systems that could not be sued, arrested, or ashamed. Tonight the bureau wanted him to sign beneath a person.
 
@@ -317,7 +321,7 @@ The train doors open. Rain has stopped.
 
 ---
 
-# SCENE 3 — MIGUEL / MIGUEL
+# SCENE 3 — MIGUELMIGUEL
 
 **Node range:** `S3_001–S3_018`  
 **Location:** Meridian detention interview room, split by transparent partition  
@@ -339,9 +343,9 @@ The man on Elias’s left looked older by a few years, though the intake file sa
 
 The man on the right remained seated. His eyes moved first to Elias’s seal, then to the ceiling camera, then back to Elias.
 
-**HALE:**
+**MARA HALE:**
 
-Miguel A. Miguel B. You may use the labels until the review concludes.
+For the record, both of you are Miguel Aranda. The file will use Subject A and Subject B until the review concludes.
 
 **MIGUEL A:**
 
@@ -349,9 +353,9 @@ You mean until he chooses one of us.
 
 **MIGUEL B:**
 
-She means until the paperwork becomes more real than the people.
+She means until the file decides what to call us.
 
-**HALE:**
+**MARA HALE:**
 
 That is not what I mean.
 
@@ -385,13 +389,13 @@ His denial was not an accident. The system learned from the people it denied, th
 
 The denial was the fact. The loop was the explanation. The explanation did not make the death less final.
 
-**HALE:**
+**MARA HALE:**
 
 No one is asking for a philosophy seminar.
 
 **MIGUEL A:**
 
-You built one and called it a city.
+You built the system. You know what it does.
 
 ### S3_003 — Behavior does not prove origin
 
@@ -525,13 +529,13 @@ That is my job.
 
 **MIGUEL B:**
 
-No. Your job is to make the institution’s action look chosen.
+No. Your job is to sign after the machine has finished talking.
 
 **MIGUEL A:**
 
 If you sign him, they will call him a citizen. If you sign me, they will call me a threat. Either way, your name will be the human part of the sentence.
 
-**HALE:**
+**MARA HALE:**
 
 Enough. The laboratory result will be available after the memory review. You will speak to them separately before then.
 
@@ -539,9 +543,9 @@ Enough. The laboratory result will be available after the memory review. You wil
 
 Why delay the marker?
 
-**HALE:**
+**MARA HALE:**
 
-Because facts do not arrive in a vacuum. I want to know what you do with the story before the story is made easy.
+Because the lab result will answer one question. I want to know what you noticed before it answers that one.
 
 **NARRATION:**
 
@@ -597,15 +601,15 @@ It is if memory is allowed to be shared.
 
 ### S4_002 — Father’s sentence
 
-Their father appeared only as an audio fragment. The system had no complete image of him. It had a hand, a shoulder, a voice reflected off the kitchen wall.
+Their father, Rafael Aranda, appeared only as an audio fragment. The system had no complete image of him. It had a hand, a shoulder, a voice reflected off the kitchen wall.
 
-**FATHER (recording):**
+**RAFAEL ARANDA (recording):**
 
 Usefulness is not worth. If a person stops producing, the person has not stopped being a person.
 
 **MIGUEL A:**
 
-He said that before the denial.
+Rafael said that before the denial.
 
 **MIGUEL B:**
 
@@ -767,15 +771,15 @@ If I am only a continuation, why did I wake up afraid?
 
 ### S5_002 — Institution expectation
 
-**HALE:**
+**MARA HALE:**
 
-The institution expected you to defend Measure.
+The institution built you to enter the Uncounted, identify its organizers, and give us a version of Miguel we could control or discredit.
 
 **MIGUEL B:**
 
 It expected a defense it could recognize.
 
-**HALE:**
+**MARA HALE:**
 
 You were built from a person who understood the system. We assumed continuity would preserve his conclusions.
 
@@ -783,7 +787,7 @@ You were built from a person who understood the system. We assumed continuity wo
 
 It preserved his questions.
 
-**HALE:**
+**MARA HALE:**
 
 That is not the same thing.
 
@@ -921,7 +925,7 @@ Elias thought of his housing status. His own personhood had never been questione
 
 The attack was not an abstraction. It had a floor plan, a shift roster, and a break room with a kettle still warm at 02:14.
 
-Miguel A had chosen the facility because its records were the city’s memory of who deserved a future. He had also chosen it knowing the night shift remained inside.
+Miguel A had chosen the facility because its records were the city’s memory of who deserved a future. He planned to partially destroy the archive and release enough evidence to expose the feedback loop. He also knew the night shift remained inside and accepted that the attack might injure or kill them.
 
 **MIGUEL A (recorded statement):**
 
@@ -949,11 +953,11 @@ And you continued.
 
 **MIGUEL A:**
 
-I continued because the city had made the cost of waiting invisible.
+I continued because waiting had become another way to let the city call the damage necessary.
 
 ### S6_002 — B’s emergency channel
 
-The archive switches to Miguel B’s action log.
+The archive switches to Miguel B’s action log. He discovers the plan before the detonation and sees the night-worker roster.
 
 **SYSTEM:**
 
@@ -976,6 +980,8 @@ Open it.
 He knew the channel was watched. He knew the warning was not a bluff. He used it anyway.
 
 The workers received the evacuation signal. They survived.
+
+The warning disrupted the timing but did not stop the attack. The facility suffered partial destruction. The Measure continued operating, and the archive was damaged rather than publicly exposed.
 
 The route back to the Uncounted was captured. Authorities seized several rebels and destroyed most of the leaked evidence before it could spread.
 
@@ -1131,7 +1137,7 @@ Then the Bureau told him the laboratory result was ready.
 
 Laboratory reconstruction marker complete.
 
-**HALE:**
+**MARA HALE:**
 
 Subject A is biologically continuous with the pre-incident Miguel. Subject B is a biological reconstruction created from scans, neural records, and surveillance data through the snapshot date.
 
@@ -1139,7 +1145,7 @@ Subject A is biologically continuous with the pre-incident Miguel. Subject B is 
 
 Conclusive?
 
-**HALE:**
+**MARA HALE:**
 
 Scientifically, yes.
 
@@ -1147,13 +1153,13 @@ Scientifically, yes.
 
 Legally?
 
-**HALE:**
+**MARA HALE:**
 
 The marker is not self-executing.
 
 ### S7_002 — The legal mechanics
 
-**HALE:**
+**MARA HALE:**
 
 The law separates what the laboratory can establish from what the institution can do. The marker establishes biological continuity. It does not, by itself, authorize transfer, prosecution, or reclamation.
 
@@ -1161,7 +1167,7 @@ The law separates what the laboratory can establish from what the institution ca
 
 Then why bring me in?
 
-**HALE:**
+**MARA HALE:**
 
 Because your signed designation creates a presumptive legal identity for immediate proceeding and authorizes transfer. The presumption can be challenged, but the institution needs a human authorization before it acts.
 
@@ -1169,7 +1175,7 @@ Because your signed designation creates a presumptive legal identity for immedia
 
 So the science tells us what happened. My signature tells you what to do with it.
 
-**HALE:**
+**MARA HALE:**
 
 Your signature tells us which legal identity we may provisionally act upon.
 
@@ -1179,7 +1185,7 @@ Your signature tells us which legal identity we may provisionally act upon.
 
 If I designate B, despite the marker?
 
-**HALE:**
+**MARA HALE:**
 
 The intake system honors the designation provisionally. B receives temporary human-prosecution protections. A’s transfer is held. A delayed conflict review begins.
 
@@ -1187,7 +1193,7 @@ The intake system honors the designation provisionally. B receives temporary hum
 
 And you investigate me.
 
-**HALE:**
+**MARA HALE:**
 
 I investigate whether the designation was an error, falsification, incapacity, or an exercise of a review power the bureau believes you did not understand. The presumption may be overturned.
 
@@ -1195,7 +1201,7 @@ I investigate whether the designation was an error, falsification, incapacity, o
 
 So B is not safe.
 
-**HALE:**
+**MARA HALE:**
 
 No. B is not instantly accepted, and A is not instantly ignored. That is what “provisional” means.
 
@@ -1205,7 +1211,7 @@ No. B is not instantly accepted, and A is not instantly ignored. That is what �
 
 If I refuse?
 
-**HALE:**
+**MARA HALE:**
 
 The institution convenes a documented emergency review. A panel may override the missing signature and apply the known marker result. A may be prosecuted. B may be reclaimed. Your refusal remains in the record.
 
@@ -1213,7 +1219,7 @@ The institution convenes a documented emergency review. A panel may override the
 
 Then the refusal changes nothing.
 
-**HALE:**
+**MARA HALE:**
 
 It changes whether the institution can claim clean human authorization. It also creates an auditable witness to the moment its process overrode a human refusal. That makes you useful, Elias. It does not make you innocent.
 
@@ -1227,7 +1233,7 @@ It does not need you to know who I am. It needs you to agree with what it will d
 
 And if you agree, they will call the agreement truth.
 
-**HALE:**
+**MARA HALE:**
 
 The system can establish continuity. It cannot assume responsibility for what continuity means.
 
@@ -1256,7 +1262,7 @@ He had believed one of them. The marker had not made him foolish. It had made th
 [BG: Legal review chamber. Elias at a central desk. Two live feeds, neither labeled A or B.]  
 [AUDIO: music drops out; only room tone]
 
-**HALE:**
+**MARA HALE:**
 
 You may ask one final question before the report screen opens.
 
@@ -1264,7 +1270,7 @@ You may ask one final question before the report screen opens.
 
 Only one?
 
-**HALE:**
+**MARA HALE:**
 
 The institution has already decided that more than one question implies delay.
 
@@ -1510,7 +1516,7 @@ Hale’s report accepted Elias’s designation without opening a conflict review
 
 Elias’s housing status remained green. His treatment priority remained active.
 
-**HALE:**
+**MARA HALE:**
 
 You made the legally legible decision.
 
@@ -1518,7 +1524,7 @@ You made the legally legible decision.
 
 Did I make the right one?
 
-**HALE:**
+**MARA HALE:**
 
 That is not a category the bureau can process.
 
@@ -1585,7 +1591,7 @@ The system opened a conflict-review file and froze both transfer routes. B could
 
 Hale remained in the room after the others were disconnected.
 
-**HALE:**
+**MARA HALE:**
 
 I will investigate your designation.
 
@@ -1593,7 +1599,7 @@ I will investigate your designation.
 
 Because I contradicted the marker.
 
-**HALE:**
+**MARA HALE:**
 
 Because the marker was conclusive and your authority was not unlimited.
 
@@ -1601,7 +1607,7 @@ Because the marker was conclusive and your authority was not unlimited.
 
 You said the signature tells the institution what it may do.
 
-**HALE:**
+**MARA HALE:**
 
 I did not say it could make every action lawful.
 
@@ -1654,7 +1660,7 @@ Report rejected. A single presumptive legal identity is required for immediate p
 
 Then record the rejection.
 
-**HALE:**
+**MARA HALE:**
 
 It is recorded.
 
@@ -1662,7 +1668,7 @@ It is recorded.
 
 And the people?
 
-**HALE:**
+**MARA HALE:**
 
 They remain in review custody until the panel determines a lawful action.
 
@@ -1690,7 +1696,7 @@ The report did not create a third option in the law. It created a documented fai
 
 ### S9_TWO_NAMES_003
 
-**HALE:**
+**MARA HALE:**
 
 You are removed from active review pending investigation.
 
@@ -1698,7 +1704,7 @@ You are removed from active review pending investigation.
 
 For refusing to choose?
 
-**HALE:**
+**MARA HALE:**
 
 For submitting a report the system cannot execute.
 
@@ -1706,7 +1712,7 @@ For submitting a report the system cannot execute.
 
 Those are different accusations.
 
-**HALE:**
+**MARA HALE:**
 
 They can share a file.
 
@@ -1739,7 +1745,7 @@ I refuse to designate either subject. I refuse to authorize transfer.
 
 No human designation received. Emergency review protocol available.
 
-**HALE:**
+**MARA HALE:**
 
 The panel will proceed.
 
@@ -1747,7 +1753,7 @@ The panel will proceed.
 
 Then record that it proceeded without my authorization.
 
-**HALE:**
+**MARA HALE:**
 
 It will be recorded.
 
@@ -1808,7 +1814,7 @@ After any ending, the system assembles a short authored reflection. It must not 
 ## Profile output template
 
 > **SUBJECT: ELIAS VENN**  
-> **REVIEW CONTEXT:** MIGUEL / MIGUEL  
+> **REVIEW CONTEXT:** MIGUELMIGUEL
 > **STATUS:** narrative reflection; not a clinical or legal determination
 
 Select 4–6 authored observations connected to the player’s choices and final report.
@@ -1883,5 +1889,5 @@ These are deliberately left as revision points rather than hidden canon changes:
 1. The exact legal name and duration of the delayed conflict review.
 2. Whether the final presentation shows the panel vote in No Signature or keeps it mostly off-screen.
 3. Which 4–6 profile observations are selected for each combination of choices; the observation bank is complete enough for implementation planning but needs a final editorial pass.
-4. The exact treatment of the unknown message in Scene 2. It is currently a mood and foreshadowing element, not a separate plot branch.
+4. Whether Lena’s appeal receives one additional callback after the final report. The current draft pays off her message by attaching the recorded statement before Elias enters the Miguel case; any later callback should remain brief and should not create a new branch.
 5. Final line polish after a table read or aloud read-through.

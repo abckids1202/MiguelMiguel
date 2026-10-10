@@ -10,17 +10,17 @@
 | Lena sold identity-allowance access | Yes, verified case file | Yes | No | No | Yes |
 | Lena’s motive and dependent’s medicine | Partly; hears directly | Knows only the record category | No | No | Yes |
 | The Measure lowers services in politically expensive districts | Vague professional awareness | Yes; treats it as policy output | Yes; discovered it as auditor | Yes through copied memory/records | No |
-| Miguel’s father died after a medical-priority denial | Redacted/partial at briefing | Yes | Yes | Yes through copied memory | No |
-| Father’s repaired object and phrase about usefulness | No | Partial record | Yes, lived it | Yes, remembers it | No |
+| Rafael Aranda died after a medical-priority denial | Redacted/partial at briefing | Yes | Yes | Yes through copied memory | No |
+| Rafael’s repaired object and phrase about usefulness | No | Partial record | Yes, lived it | Yes, remembers it | No |
 | Miguel copied internal records | Yes by dossier summary | Yes | Yes | Yes through copied memory and movement records | No |
 | B is a reconstruction | Hale’s briefing says one subject is a construct but not which | Yes | Learns/strongly suspects through experience and confrontation | Yes | No |
 | B’s first independent memory | No | Institutional record exists but is not emotionally known | No; cannot share it | Yes | No |
 | B joined/entered the Uncounted | No at start | Yes through surveillance | Learns and distrusts him | Yes | No |
-| A planned the records-facility attack | No at start | Yes | Yes; he knows the plan may create systemic change and that workers remain inside | Yes; he learns the plan through movement access and surveillance | No |
+| A planned the partial destruction of the records facility | No at start | Yes | Yes; he knows the plan may create systemic change and that workers remain inside | Yes; he learns the plan through movement access and surveillance | No |
 | A refused to cancel after learning workers remained | No | Yes | Yes; he knowingly chooses possible systemic change over immediate worker lives | Yes; he knows A has made that choice | No |
 | B’s emergency warning channel | No | Yes | Learns afterward that B exposed an institution-controlled route | Yes; he knows the channel is monitored and may expose the Uncounted’s access route | No |
-| B warned workers and disrupted detonation | No | Yes | Yes; he sees the warning as both rescue and strategic damage | Yes | No |
-| Workers survived and most leaked evidence was destroyed | No | Yes | Learns after capture | Yes; knows authorities may capture rebels and destroy most of the leak | No |
+| B warned workers and disrupted, but did not stop, the detonation | No | Yes | Yes; he sees the warning as both rescue and strategic damage | Yes | No |
+| Workers escaped; the archive was partially destroyed and most leaked evidence was destroyed | No | Yes | Learns after capture | Yes; knows authorities may capture rebels and destroy most of the leak | No |
 | Microscopic marker identifies B | No until Scene 7 | Yes before interview | Not until report | May know the institution can identify him, but not the full report | No |
 | Marker is scientifically conclusive but not legally self-executing | No until Hale explains | Yes | Understands the legal trap but not every review step | Understands the legal trap but not every review step | No |
 | Elias’s signed designation creates a presumptive legal identity and authorizes transfer | Learns in Scenes 2/7 | Yes | Understands that A’s status depends on the designation | Understands that B’s treatment depends on the designation | No |
@@ -49,7 +49,7 @@ A’s emotional intensity is not secret evidence. It is his present state and hi
 
 ### Miguel B
 
-B knows Miguel’s copied life through the snapshot and knows his own awakening, infiltration, confession, warning, and intervention. Before warning the workers, he knows they are inside, knows the emergency channel is controlled and traceable by the institution, and predicts that using it may expose the Uncounted’s access route. He chooses the warning anyway; the workers survive, but authorities capture rebels and destroy most of the leak. He does not know whether his compassion was programmed, conditioned, or freely chosen. He cannot prove that A’s unchosen grief is more authentic than his own unchosen construction.
+B knows Miguel’s copied life through the snapshot and knows his own awakening, infiltration, confession, warning, and intervention. Before warning the workers, he discovers A’s plan, knows they are inside, knows the emergency channel is controlled and traceable by the institution, and predicts that using it may expose the Uncounted’s access route. He chooses the warning anyway; the workers escape, but the attack still partially destroys the archive, authorities capture rebels, and most of the leak is destroyed. He does not know whether his compassion was programmed, conditioned, or freely chosen. He cannot prove that A’s unchosen grief is more authentic than his own unchosen construction.
 
 B can be precise without being wiser. His calm is not a truth signal.
 
@@ -66,7 +66,7 @@ Lena knows the exact transaction and the person she was protecting. She does not
 | 3 | Both subjects share identity memories; their presentation differs | Why B can share the memories; final moral significance of the difference |
 | 4 | Shared childhood details and different present interpretations | B’s independent awakening memory; exact attack consequences |
 | 5 | B has a first memory outside A’s lived timeline; agency is unsettled | The laboratory marker; Hale’s prior certainty |
-| 6 | A knew workers remained and accepted the risk; B used a traceable emergency channel, saved workers, and caused strategic losses | The institution’s legal use of the human signature |
+| 6 | A knew workers remained and accepted the risk; B discovered the plan, used a traceable emergency channel, saved workers, and caused strategic losses while the archive was partially destroyed | The institution’s legal use of the human signature |
 | 7 | B is synthetic; A is biologically continuous; Hale knew; a contradictory signature is provisionally honored then reviewed | Which report Elias will choose |
 | 8 | The fact is resolved; both subjects articulate a moral challenge | The emotional shape of the selected ending |
 | 9 | The consequences of the chosen report | No additional hidden reversal |
