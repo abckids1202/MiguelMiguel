@@ -1,14 +1,14 @@
 # MiguelMiguel Visual Style Guide
 
-**Status:** Active implementation guide for the first Godot vertical slice  
+**Status:** Active implementation guide for the dark 2D remake  
 **Reference:** 1920×1080, 16:9  
 **Title:** MiguelMiguel
 
 ## Direction
 
-MiguelMiguel uses graphic illustrated realism: clear architectural shapes, controlled painterly texture, and restrained human detail. The world should feel inhabited and administratively efficient. The horror comes from procedure, records, waiting rooms, and the calmness of official language.
+MiguelMiguel uses graphic painted 2D: clear architectural blocks, simplified silhouettes, ink-like edges, controlled dry-brush texture, and selective realistic lighting without photorealistic surfaces. The world should feel inhabited but barely functional. The horror comes from procedure, records, waiting rooms, public unrest, and the calmness of official language.
 
-The presentation is serious and quiet. It does not use neon cyberpunk colors, cartoon brightness, spectacle, gore, or visual noise. It takes broad inspiration from psychologically serious visual novels without copying any named game or artist.
+The presentation is serious and quiet even when the city is in revolt. It does not use neon cyberpunk colors, cartoon brightness, spectacle, gore, or visual noise. It takes broad inspiration from psychologically serious visual novels without copying any named game or artist.
 
 ## Palette
 
@@ -33,6 +33,7 @@ Amber and cyan are never permanent identity clues. They can move between subject
 - Use portraits as separate transparent layers so expressions can change without replacing the location.
 - Keep interrogation portraits symmetrical and emphasize attention through opacity or brightness rather than dramatic movement.
 - Keep title and menu surfaces dark, paper-like, and sparse.
+- Let public unrest remain distant and environmental: barricades, damaged screens, low-detail crowds, hand-made signs, smoke, and aftermath.
 
 ## Typography
 
@@ -47,6 +48,10 @@ Amber and cyan are never permanent identity clues. They can move between subject
 Elias, Lena, Hale, Miguel A, and Miguel B use locked portrait reference sheets before a full batch is generated. Expression variants change posture, gaze, and tension—not facial identity.
 
 Miguel A and Miguel B must share the same base likeness and wardrobe logic. No artificial-looking glow, cyan skin, mechanical detail, perfect symmetry, or other visual shorthand may reveal the biological answer.
+
+## Elias de-registration arc
+
+Elias begins with the clearest and warmest record treatment. Across the chapters his portrait loses a small amount of contrast and warmth; later screens may mark his record as partial or misaligned. This is an administrative and psychological visual effect, not supernatural body horror. The treatment must never identify Miguel A or Miguel B.
 
 ## Motion rules
 

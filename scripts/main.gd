@@ -28,6 +28,20 @@ var visual_time := 0.0
 var background: ColorRect
 var background_image: TextureRect
 var background_tint: ColorRect
+var active_background_id := ""
+var background_catalog := {
+    "civic_office_after_hours": "res://assets/backgrounds/bg_civic_office_v2.png",
+    "meridian_revolt_street": "res://assets/backgrounds/bg_meridian_revolt_street.png",
+    "interrogation_split": "res://assets/backgrounds/bg_interrogation_split_v2.png",
+    "meridian_train": "res://assets/backgrounds/bg_meridian_train.png",
+    "detention_entrance": "res://assets/backgrounds/bg_meridian_revolt_street.png",
+    "aranda_apartment_memory": "res://assets/backgrounds/bg_aranda_apartment_memory.png",
+    "memory_lab": "res://assets/backgrounds/bg_memory_lab.png",
+    "measure_archive": "res://assets/backgrounds/bg_measure_archive.png",
+    "evidence_lab": "res://assets/backgrounds/bg_evidence_lab.png",
+    "legal_review": "res://assets/backgrounds/bg_evidence_lab.png",
+    "final_report": "res://assets/backgrounds/bg_final_report.png",
+}
 var title_layer: Control
 var game_layer: Control
 var overlay: ColorRect
@@ -43,6 +57,7 @@ var portrait_panel: Panel
 var portrait_mark: Label
 var portrait_name: Label
 var portrait_role: Label
+var portrait_status: Label
 var speaker_label: Label
 var dialogue_label: Label
 var choice_prompt: Label
@@ -116,7 +131,7 @@ func _build_ui() -> void:
     add_child(background)
 
     background_image = TextureRect.new()
-    background_image.texture = preload("res://assets/backgrounds/bg_civic_office.png")
+    background_image.texture = preload("res://assets/backgrounds/bg_civic_office_v2.png")
     background_image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
     background_image.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
     background_image.modulate = Color(0.78, 0.84, 0.86, 0.88)
@@ -271,6 +286,11 @@ func _build_game_layer() -> void:
     portrait_role.size = Vector2(240, 28)
     portrait_role.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
     self.portrait_role = portrait_role
+
+    portrait_status = _label(portrait_panel, "RECORD: VERIFIED", 18, palette.muted)
+    portrait_status.position = Vector2(20, 294)
+    portrait_status.size = Vector2(240, 28)
+    portrait_status.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
     mood_label = _label(game_layer, "Meridian", 18, palette.muted)
     mood_label.anchor_left = 0.35
@@ -478,9 +498,59 @@ func _set_visuals(data: Dictionary) -> void:
     portrait_mark.text = portrait.left(1).to_upper()
     portrait_name.text = str(data.get("portrait_name", "ELIAS VENN"))
     portrait_role.text = str(data.get("portrait_role", "Civic Investigations Division"))
+    _set_background(str(data.get("background_id", "civic_office_after_hours")))
+    _set_elias_presence(data)
     var tint: Color = data.get("tint", Color(0.12, 0.10, 0.18, 0.34))
-    background.color = Color(0.026 + tint.r * 0.035, 0.024 + tint.g * 0.030, 0.028 + tint.b * 0.030)
-    background_tint.color = Color(tint.r * 0.42, tint.g * 0.36, tint.b * 0.36, 0.16)
+    background.color = Color(0.026 + tint.r * 0.025, 0.024 + tint.g * 0.022, 0.028 + tint.b * 0.022)
+    background_tint.color = Color(tint.r * 0.34, tint.g * 0.30, tint.b * 0.30, 0.22)
+
+func _set_background(background_id: String) -> void:
+    var requested_path := str(background_catalog.get(background_id, ""))
+    if requested_path.is_empty() or not ResourceLoader.exists(requested_path):
+        push_warning("Missing background asset for '%s'; using civic office fallback." % background_id)
+        requested_path = "res://assets/backgrounds/bg_civic_office_v2.png"
+    var texture := load(requested_path) as Texture2D
+    if texture == null:
+        push_warning("Could not load background '%s'." % requested_path)
+        return
+    if active_background_id == background_id and background_image.texture == texture:
+        return
+    active_background_id = background_id
+    background_image.texture = texture
+    if reduced_motion:
+        background_image.modulate.a = 0.82
+        background_image.position = Vector2.ZERO
+        return
+    background_image.modulate.a = 0.0
+    var fade := create_tween()
+    fade.set_trans(Tween.TRANS_SINE)
+    fade.set_ease(Tween.EASE_OUT)
+    fade.tween_property(background_image, "modulate:a", 0.82, 0.42)
+
+func _set_elias_presence(data: Dictionary) -> void:
+    var portrait := str(data.get("portrait", ""))
+    var chapter := str(data.get("chapter", ""))
+    var loss := 0.0
+    if portrait == "E":
+        if chapter.contains("02"):
+            loss = 0.04
+        elif chapter.contains("03") or chapter.contains("04"):
+            loss = 0.10
+        elif chapter.contains("05") or chapter.contains("06"):
+            loss = 0.17
+        elif chapter.contains("07"):
+            loss = 0.24
+        elif chapter.contains("08") or chapter.contains("09") or chapter == "ENDING":
+            loss = 0.32
+    portrait_panel.modulate = Color(1.0 - loss * 0.20, 1.0 - loss * 0.20, 1.0 - loss * 0.20, 1.0)
+    portrait_mark.modulate = Color(1.0, 1.0, 1.0, 1.0 - loss * 0.45)
+    portrait_name.modulate = Color(1.0, 1.0, 1.0, 1.0 - loss * 0.20)
+    if portrait == "E" and loss >= 0.20:
+        portrait_status.text = "RECORD: PARTIAL"
+        portrait_status.add_theme_color_override("font_color", palette.red)
+    else:
+        portrait_status.text = "RECORD: VERIFIED"
+        portrait_status.add_theme_color_override("font_color", palette.muted)
 
 func _show_line_node(data: Dictionary) -> void:
     choice_prompt.visible = false
@@ -708,6 +778,7 @@ func _line(id: String, chapter: String, scene: String, speaker: String, text: St
         "portrait_name": portrait_name,
         "portrait_role": portrait_role,
         "tint": tint,
+        "background_id": _background_id_for_scene(scene, mood),
     }
 
 func _choice(id: String, chapter: String, scene: String, choice_id: String, prompt: String, options: Array, mood: String, portrait: String, portrait_name: String, portrait_role: String, tint: Color) -> void:
@@ -723,7 +794,23 @@ func _choice(id: String, chapter: String, scene: String, choice_id: String, prom
         "portrait_name": portrait_name,
         "portrait_role": portrait_role,
         "tint": tint,
+        "background_id": _background_id_for_scene(scene, mood),
     }
+
+func _background_id_for_scene(scene: String, mood: String = "") -> String:
+    match scene:
+        "A Minor Irregularity": return "civic_office_after_hours"
+        "Meridian":
+            if mood.contains("Elevated train") or mood.contains("Message from") or mood.contains("Secure case"):
+                return "meridian_train"
+            return "meridian_revolt_street"
+        "MiguelMiguel", "One Final Question": return "interrogation_split"
+        "A Shared Childhood": return "aranda_apartment_memory"
+        "The First New Memory": return "memory_lab"
+        "Necessary Casualties": return "measure_archive"
+        "Proof": return "evidence_lab"
+        "The Signature", "The Original", "The Continuation", "Two Names", "No Signature": return "final_report"
+        _: return "civic_office_after_hours"
 
 func _option(label: String, next_id: String, effects: Dictionary = {}, hint: String = "", report: String = "") -> Dictionary:
     return {"label": label, "next": next_id, "effects": effects, "hint": hint, "report": report}

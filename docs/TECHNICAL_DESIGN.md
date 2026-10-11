@@ -9,7 +9,7 @@
 
 ### First visual implementation
 
-The current Godot slice keeps the story runner in `scripts/main.gd` but adds a reusable layered visual foundation: a location background layer, tint layer, portrait/UI layers, and restrained motion hooks. The first approved background is `assets/backgrounds/bg_civic_office.png`. Future backgrounds and transparent portraits can be added without changing story node IDs.
+The current Godot slice keeps the story runner in `scripts/main.gd` but adds a reusable layered visual foundation: a catalog-driven location background layer, tint layer, portrait/UI layers, explicit `background_id` story metadata, fallback loading, Elias de-registration treatment, and restrained motion hooks. The active test backgrounds are `bg_civic_office_v2.png`, `bg_meridian_revolt_street.png`, and `bg_interrogation_split_v2.png`. Future backgrounds and transparent portraits can be added without changing story node IDs.
 
 Godot is the game engine that will display the story, accept input, play audio, and save progress. A Godot **project** is normally identified by a `project.godot` file, but this task intentionally stops before creating that file. We are first keeping the game in a normal folder so the story/design decisions can be reviewed without mixing them with engine files.
 
