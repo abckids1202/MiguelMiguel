@@ -33,7 +33,9 @@ Amber and cyan are never permanent identity clues. They can move between subject
 - Use portraits as separate transparent layers so expressions can change without replacing the location.
 - Keep interrogation portraits symmetrical and emphasize attention through opacity or brightness rather than dramatic movement.
 - Keep title and menu surfaces dark, paper-like, and sparse.
-- Let public unrest remain distant and environmental: barricades, damaged screens, low-detail crowds, hand-made signs, smoke, and aftermath.
+- Keep every background plate empty of people, faces, mannequins, human silhouettes, and implied figures. Public unrest is communicated through abandoned barricades, damaged screens, blocked streets, torn blank posters, smoke, and aftermath rather than crowds.
+- Use a distinct oblique composition for each location: side-aisle, doorway, low-angle, high-corner, or three-quarter views. Avoid centered frontal staging unless a future UI state specifically requires it.
+- Preserve a calm lower region for dialogue even when the architecture is viewed at an angle.
 
 ## Typography
 

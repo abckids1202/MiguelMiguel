@@ -30,17 +30,17 @@ var background_image: TextureRect
 var background_tint: ColorRect
 var active_background_id := ""
 var background_catalog := {
-    "civic_office_after_hours": "res://assets/backgrounds/bg_civic_office_v2.png",
-    "meridian_revolt_street": "res://assets/backgrounds/bg_meridian_revolt_street.png",
-    "interrogation_split": "res://assets/backgrounds/bg_interrogation_split_v2.png",
-    "meridian_train": "res://assets/backgrounds/bg_meridian_train.png",
-    "detention_entrance": "res://assets/backgrounds/bg_meridian_revolt_street.png",
-    "aranda_apartment_memory": "res://assets/backgrounds/bg_aranda_apartment_memory.png",
-    "memory_lab": "res://assets/backgrounds/bg_memory_lab.png",
-    "measure_archive": "res://assets/backgrounds/bg_measure_archive.png",
-    "evidence_lab": "res://assets/backgrounds/bg_evidence_lab.png",
-    "legal_review": "res://assets/backgrounds/bg_evidence_lab.png",
-    "final_report": "res://assets/backgrounds/bg_final_report.png",
+    "civic_office_after_hours": "res://assets/backgrounds/bg_civic_office_v3.png",
+    "meridian_revolt_street": "res://assets/backgrounds/bg_meridian_revolt_street_v3.png",
+    "interrogation_split": "res://assets/backgrounds/bg_interrogation_split_v3.png",
+    "meridian_train": "res://assets/backgrounds/bg_meridian_train_v3.png",
+    "detention_entrance": "res://assets/backgrounds/bg_meridian_revolt_street_v3.png",
+    "aranda_apartment_memory": "res://assets/backgrounds/bg_aranda_apartment_memory_v3.png",
+    "memory_lab": "res://assets/backgrounds/bg_memory_lab_v3.png",
+    "measure_archive": "res://assets/backgrounds/bg_measure_archive_v3.png",
+    "evidence_lab": "res://assets/backgrounds/bg_evidence_lab_v3.png",
+    "legal_review": "res://assets/backgrounds/bg_evidence_lab_v3.png",
+    "final_report": "res://assets/backgrounds/bg_final_report_v3.png",
 }
 var title_layer: Control
 var game_layer: Control
@@ -131,7 +131,7 @@ func _build_ui() -> void:
     add_child(background)
 
     background_image = TextureRect.new()
-    background_image.texture = preload("res://assets/backgrounds/bg_civic_office_v2.png")
+    background_image.texture = preload("res://assets/backgrounds/bg_civic_office_v3.png")
     background_image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
     background_image.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
     background_image.modulate = Color(0.78, 0.84, 0.86, 0.88)
@@ -508,7 +508,7 @@ func _set_background(background_id: String) -> void:
     var requested_path := str(background_catalog.get(background_id, ""))
     if requested_path.is_empty() or not ResourceLoader.exists(requested_path):
         push_warning("Missing background asset for '%s'; using civic office fallback." % background_id)
-        requested_path = "res://assets/backgrounds/bg_civic_office_v2.png"
+        requested_path = "res://assets/backgrounds/bg_civic_office_v3.png"
     var texture := load(requested_path) as Texture2D
     if texture == null:
         push_warning("Could not load background '%s'." % requested_path)
