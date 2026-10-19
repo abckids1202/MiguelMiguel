@@ -87,8 +87,10 @@ var palette := {
 }
 
 func _ready() -> void:
-    body_font = _system_font(["Georgia", "Cambria", "Times New Roman"])
-    ui_font = _system_font(["Segoe UI", "Arial"])
+    # A compact literary serif gives the dialogue a period-record feeling while
+    # keeping the letter shapes familiar and easy to read.
+    body_font = _system_font(["Palatino Linotype", "Book Antiqua", "Georgia", "Cambria"])
+    ui_font = _system_font(["Aptos", "Segoe UI", "Arial"])
     _build_ui()
     _build_story()
     _show_title()
@@ -316,19 +318,21 @@ func _build_game_layer() -> void:
     dialogue_panel.add_theme_stylebox_override("panel", _box(Color(0.024, 0.022, 0.025, 0.98), 4, Color(0.26, 0.19, 0.17), 1))
     game_layer.add_child(dialogue_panel)
 
-    speaker_label = _label(dialogue_panel, "NARRATION", 22, palette.gold)
+    speaker_label = _label(dialogue_panel, "NARRATION", 20, palette.gold)
     speaker_label.position = Vector2(26, 16)
     speaker_label.size = Vector2(850, 30)
 
-    dialogue_label = _label(dialogue_panel, "", 29, palette.ink)
+    dialogue_label = _label(dialogue_panel, "", 26, palette.ink)
     dialogue_label.position = Vector2(26, 53)
     dialogue_label.size = Vector2(850, 112)
     dialogue_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
     dialogue_label.vertical_alignment = VERTICAL_ALIGNMENT_TOP
-    dialogue_label.add_theme_constant_override("line_spacing", 8)
+    dialogue_label.add_theme_constant_override("line_spacing", 5)
+    dialogue_label.add_theme_constant_override("outline_size", 2)
+    dialogue_label.add_theme_color_override("font_outline_color", Color(0.01, 0.009, 0.012, 0.90))
     self.dialogue_label = dialogue_label
 
-    choice_prompt = _label(dialogue_panel, "", 21, palette.ink)
+    choice_prompt = _label(dialogue_panel, "", 20, palette.ink)
     choice_prompt.position = Vector2(26, 53)
     choice_prompt.size = Vector2(850, 70)
     choice_prompt.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
@@ -349,7 +353,7 @@ func _build_game_layer() -> void:
     footer.add_theme_stylebox_override("panel", _box(Color(0.022, 0.020, 0.023, 0.98), 0))
     game_layer.add_child(footer)
 
-    status_label = _label(footer, "SPACE / ENTER  CONTINUE     B  BACKLOG     ESC  MENU", 18, palette.muted)
+    status_label = _label(footer, "CLICK / SPACE / ENTER  REVEAL / NEXT     B  BACKLOG     ESC  MENU", 18, palette.muted)
     status_label.position = Vector2(25, 8)
     status_label.size = Vector2(700, 30)
 
@@ -562,7 +566,7 @@ func _show_line_node(data: Dictionary) -> void:
     typed_characters = 0
     type_accumulator = 0.0
     is_typing = true
-    continue_button.text = "Skip"
+    continue_button.text = "Reveal"
     var entry := "[color=#c5a36b]" + speaker_label.text + "[/color]\n" + full_text
     if full_text.length() > 0 and (backlog.is_empty() or backlog.back() != entry):
         backlog.append(entry)
@@ -610,16 +614,21 @@ func _advance_or_finish() -> void:
     if mode != "game" or overlay.visible:
         return
     if is_typing:
-        is_typing = false
-        typed_characters = full_text.length()
-        dialogue_label.text = full_text
-        continue_button.text = "Continue"
+        _finish_typing()
         return
     var next_id := str(current_node.get("next", ""))
     if current_node.get("ending", false):
         _show_profile()
     elif not next_id.is_empty():
         _show_node(next_id)
+
+func _finish_typing() -> void:
+    """Reveal the current line; a later press advances to the next node."""
+    is_typing = false
+    type_accumulator = 0.0
+    typed_characters = full_text.length()
+    dialogue_label.text = full_text
+    continue_button.text = "Continue"
 
 func _show_status(message: String) -> void:
     status_label.text = message
