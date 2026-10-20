@@ -55,6 +55,7 @@ var scene_label: Label
 var mood_label: Label
 var portrait_panel: Panel
 var portrait_mark: Label
+var portrait_art: Control
 var portrait_name: Label
 var portrait_role: Label
 var portrait_status: Label
@@ -62,7 +63,7 @@ var speaker_label: Label
 var dialogue_label: Label
 var choice_prompt: Label
 var choice_container: VBoxContainer
-var continue_button: Button
+var advance_surface: Button
 var backlog_button: Button
 var save_button: Button
 var load_button: Button
@@ -110,7 +111,6 @@ func _process(delta: float) -> void:
         dialogue_label.text = full_text.substr(0, typed_characters)
     if typed_characters >= full_text.length():
         is_typing = false
-        continue_button.text = "Continue"
 
 func _unhandled_input(event: InputEvent) -> void:
     if mode != "game" or overlay.visible:
@@ -207,9 +207,21 @@ func _build_game_layer() -> void:
     game_layer.visible = false
     add_child(game_layer)
 
+    advance_surface = Button.new()
+    advance_surface.text = ""
+    advance_surface.focus_mode = Control.FOCUS_NONE
+    advance_surface.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
+    advance_surface.add_theme_stylebox_override("normal", StyleBoxEmpty.new())
+    advance_surface.add_theme_stylebox_override("hover", StyleBoxEmpty.new())
+    advance_surface.add_theme_stylebox_override("pressed", StyleBoxEmpty.new())
+    _full(advance_surface)
+    advance_surface.pressed.connect(_advance_or_finish)
+    game_layer.add_child(advance_surface)
+
     var top_bar := Panel.new()
     top_bar.set_anchors_preset(Control.PRESET_TOP_WIDE)
     top_bar.offset_bottom = 64
+    top_bar.mouse_filter = Control.MOUSE_FILTER_IGNORE
     top_bar.add_theme_stylebox_override("panel", _box(Color(0.022, 0.020, 0.023, 0.98), 0, Color(0.18, 0.14, 0.14), 0))
     game_layer.add_child(top_bar)
 
@@ -267,15 +279,15 @@ func _build_game_layer() -> void:
     portrait_panel.anchor_right = 0.315
     portrait_panel.anchor_bottom = 0.67
     portrait_panel.add_theme_stylebox_override("panel", _box(Color(0.055, 0.047, 0.050, 0.94), 4, Color(0.28, 0.20, 0.18), 1))
+    portrait_panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
     game_layer.add_child(portrait_panel)
     self.portrait_panel = portrait_panel
 
-    portrait_mark = _label(portrait_panel, "E", 86, Color(0.25, 0.18, 0.17, 0.76))
-    portrait_mark.position = Vector2(20, 20)
-    portrait_mark.size = Vector2(240, 190)
-    portrait_mark.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-    portrait_mark.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
-    self.portrait_mark = portrait_mark
+    portrait_art = preload("res://scripts/avatar_portrait.gd").new()
+    portrait_art.position = Vector2(20, 20)
+    portrait_art.size = Vector2(240, 190)
+    portrait_panel.add_child(portrait_art)
+    self.portrait_art = portrait_art
 
     portrait_name = _label(portrait_panel, "ELIAS VENN", 19, palette.ink)
     portrait_name.position = Vector2(20, 225)
@@ -307,6 +319,7 @@ func _build_game_layer() -> void:
     stage_rule.anchor_top = 0.20
     stage_rule.anchor_right = 0.95
     stage_rule.offset_bottom = 1
+    stage_rule.mouse_filter = Control.MOUSE_FILTER_IGNORE
     game_layer.add_child(stage_rule)
 
     var dialogue_panel := Panel.new()
@@ -316,6 +329,7 @@ func _build_game_layer() -> void:
     dialogue_panel.anchor_right = 0.965
     dialogue_panel.anchor_bottom = 0.935
     dialogue_panel.add_theme_stylebox_override("panel", _box(Color(0.024, 0.022, 0.025, 0.98), 4, Color(0.26, 0.19, 0.17), 1))
+    dialogue_panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
     game_layer.add_child(dialogue_panel)
 
     speaker_label = _label(dialogue_panel, "NARRATION", 20, palette.gold)
@@ -351,19 +365,12 @@ func _build_game_layer() -> void:
     footer.set_anchors_preset(Control.PRESET_BOTTOM_WIDE)
     footer.anchor_top = 0.94
     footer.add_theme_stylebox_override("panel", _box(Color(0.022, 0.020, 0.023, 0.98), 0))
+    footer.mouse_filter = Control.MOUSE_FILTER_IGNORE
     game_layer.add_child(footer)
 
     status_label = _label(footer, "CLICK / SPACE / ENTER  REVEAL / NEXT     B  BACKLOG     ESC  MENU", 18, palette.muted)
     status_label.position = Vector2(25, 8)
     status_label.size = Vector2(700, 30)
-
-    continue_button = _button(footer, "Continue", Callable(self, "_advance_or_finish"))
-    continue_button.anchor_left = 1.0
-    continue_button.anchor_right = 1.0
-    continue_button.offset_left = -175
-    continue_button.offset_right = -25
-    continue_button.offset_top = 5
-    continue_button.offset_bottom = 43
 
 func _build_overlay() -> void:
     overlay = ColorRect.new()
@@ -499,7 +506,8 @@ func _set_visuals(data: Dictionary) -> void:
     scene_label.text = str(data.get("scene", ""))
     mood_label.text = str(data.get("mood", "Meridian"))
     var portrait := str(data.get("portrait", "E"))
-    portrait_mark.text = portrait.left(1).to_upper()
+    if portrait_art:
+        portrait_art.set_portrait(portrait)
     portrait_name.text = str(data.get("portrait_name", "ELIAS VENN"))
     portrait_role.text = str(data.get("portrait_role", "Civic Investigations Division"))
     _set_background(str(data.get("background_id", "civic_office_after_hours")))
@@ -547,7 +555,8 @@ func _set_elias_presence(data: Dictionary) -> void:
         elif chapter.contains("08") or chapter.contains("09") or chapter == "ENDING":
             loss = 0.32
     portrait_panel.modulate = Color(1.0 - loss * 0.20, 1.0 - loss * 0.20, 1.0 - loss * 0.20, 1.0)
-    portrait_mark.modulate = Color(1.0, 1.0, 1.0, 1.0 - loss * 0.45)
+    if portrait_art:
+        portrait_art.set_portrait(portrait, loss)
     portrait_name.modulate = Color(1.0, 1.0, 1.0, 1.0 - loss * 0.20)
     if portrait == "E" and loss >= 0.20:
         portrait_status.text = "RECORD: PARTIAL"
@@ -559,14 +568,12 @@ func _set_elias_presence(data: Dictionary) -> void:
 func _show_line_node(data: Dictionary) -> void:
     choice_prompt.visible = false
     dialogue_label.visible = true
-    continue_button.visible = true
     full_text = str(data.get("text", ""))
     speaker_label.text = str(data.get("speaker", "NARRATION"))
     dialogue_label.text = ""
     typed_characters = 0
     type_accumulator = 0.0
     is_typing = true
-    continue_button.text = "Reveal"
     var entry := "[color=#c5a36b]" + speaker_label.text + "[/color]\n" + full_text
     if full_text.length() > 0 and (backlog.is_empty() or backlog.back() != entry):
         backlog.append(entry)
@@ -574,7 +581,6 @@ func _show_line_node(data: Dictionary) -> void:
 func _show_choice_node(data: Dictionary) -> void:
     is_typing = false
     dialogue_label.visible = false
-    continue_button.visible = false
     choice_prompt.visible = true
     speaker_label.text = "RECORD INTERPRETATION"
     choice_prompt.text = str(data.get("prompt", "Choose an interpretation."))
@@ -628,7 +634,6 @@ func _finish_typing() -> void:
     type_accumulator = 0.0
     typed_characters = full_text.length()
     dialogue_label.text = full_text
-    continue_button.text = "Continue"
 
 func _show_status(message: String) -> void:
     status_label.text = message
